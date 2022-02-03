@@ -7,17 +7,20 @@
     <title>HTML</title>
 </head>
 <body>
-
-    <header>
-
+    <header id="top">
         <h2>HTML 5</h2>
-        
-        <nav role="navigation" aria-label="main menu">
-            <ul class="navbar">
-                <li><a href="/">Home</a></li>
-                <li><a href="html.html">HTML</a></li>
-                <li><a href="css.hmtl">CSS</a></li>
-                <li><a href="javascript.html">Javascript</a></li>
+        <nav role="navigation" aria-label="main menu" class="navbar">
+            <a href="index.html">Home</a></li>
+            <a href="html.html"><img src="images/html.png" alt="html icon" width="70"></a></li>
+            <a href="css.hmtl"><img src="images/css.png" alt="css icon" width="70"></a></li>
+            <a href="javascript.html">Javascript</a></li>
+            <ul>
+                <li>
+                    <a href="#syntax">Syntax</a>
+                </li>
+                <li>
+                    <a href="#links">Links</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -29,11 +32,7 @@
             </figcaption>
         </figure>
 
-        <p>
-            <a href="media/Certificate of Appreciation.pdf">Link to PDF (3MB)</a>
-        </p>
-
-    <h3>Syntax</h3>
+    <h3 id="syntax">Syntax</h3>
     <p>Element = Opening tag + content + closing tag</p>
     <p> This is a <em>paragraph</em>.</p> 
     <code>   &lt;p> This is a paragraph &lt;/p>   </code>  
@@ -77,10 +76,17 @@
     <p>cite editable</p>
     <cite contenteditable="true">Your name here</cite>
 
-    <h3>Links</h3>
+    <h3 id="links">Links</h3>
     <p>
         <a href="https://www.google.com" target="_blank">Google</a>
     </p>
+    <p>
+        <a href="media/Certificate of Appreciation.pdf">Link to PDF </a>(PDF, 3MB)
+    </p>
+    <p>
+        <a href="media/Certificate of Appreciation.docx">Link to Word Document</a>(Word document, 3MB)
+    </p>
 
+    <p><a href="#top">Back to Top</a></p>
 </body>
 </html>
