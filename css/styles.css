@@ -6,6 +6,11 @@ nav {
     border-right: 1px solid #666;
     border-bottom: 1px solid #666;;
 }
+img {
+    border: 4px double black;
+    margin: 0 10px;
+    padding: 10px;
+}
 ul {
     display: block;
     list-style-type: none;
