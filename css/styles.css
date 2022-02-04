@@ -2,6 +2,9 @@
 h1 {
     text-align: center;
 }
+h3 {
+    clear: both;
+}
 
 nav {
     background-color: aqua;
@@ -50,4 +53,8 @@ a:active {
 }
 .multimedia {
     margin-top: 120px;
+}
+body.ht {
+    font-size: 12pt;
+    background: url("../images/html.png") no-repeat right 20px top 100px;
 }
