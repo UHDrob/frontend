@@ -1,4 +1,8 @@
 
+h1 {
+    text-align: center;
+}
+
 nav {
     background-color: aqua;
     text-align: left;
@@ -8,10 +12,12 @@ nav {
     border-bottom: 1px solid #666;;
 }
 img {
-    border: 4px double black;
     margin: 0 10px;
     padding: 10px;
+    vertical-align: middle;
+    transform: rotate(-20deg) translateY(30px);
     float: left;
+    clip-path: ellipse(50% 40% at 50% 50%);
 }
 ul {
     display: block;
@@ -41,4 +47,7 @@ a:hover {
 }
 a:active {
     color:red;
+}
+.multimedia {
+    margin-top: 120px;
 }
