@@ -1,8 +1,9 @@
 
 nav {
     background-color: aqua;
+    text-align: left;
     height: 5vh;
-    width: 75%;
+    width: 100%;
     border-right: 1px solid #666;
     border-bottom: 1px solid #666;;
 }
@@ -10,6 +11,7 @@ img {
     border: 4px double black;
     margin: 0 10px;
     padding: 10px;
+    float: left;
 }
 ul {
     display: block;
@@ -19,6 +21,7 @@ ul {
 }
 li {
     display: inline-block;
+    padding: 20px 0px;
 }
 a {
     border: 1px solid black;
