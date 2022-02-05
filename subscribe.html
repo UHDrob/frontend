@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Front End Developer</title>
+    <title>Front End Developer - ubscribe</title>
 </head>
 <body>
+
+    <main>
     <!--Last Updated Feb 5, 2022-->
     <header>
         <h1> Front End Developer</h1>
-        <h2>UHD WEB DESIGN</h2>
+        <h2>SUBSCRIBE</h2>
         <nav aria-label="main menu" class="navbar">
             <ul>
                 <li> <a href="index.html">Home</a></li>
@@ -22,31 +24,31 @@
         </nav>
     </header>
 
+        <form id="questions"  method="get" action="received.html">
+            
+            <input type="text" name="name" id="name" placeholder="first name (required)"><br>
 
-    <p>
-        <!--   
-        <img src="https://www.wallpapers13.com/wp-content/uploads/2020/09/Sunset-Airplane-Takeoff-Free-Images-for-Wallpapers-Hd-1920x1200.jpg" 
-        alt="and airplane in front of the sun in a sunset above the sea" width="500"> <br>   -->
-        <img src="images/50-Sunset-Airplane-Takeoff-Free-Images-for-Wallpapers-Hd-1920x1200.jpg" 
-        alt="and airplane in front of the sun in a sunset above the sea" width="200"> <br>
-        <p>
-            An introduction to the technologies and languages used to develop and operate business 
-            and e-commerce Web sites with focus on client-side technologies
-        </p><br>
-        
-    </p><br>
+            <input type="email" name="email" id="email" placeholder="email (required)"><br>
+            <input type="email" name="email" id="email" placeholder="verify email (required)"><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"><br>
+
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone"><br>
+
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date"><br>
+
+            <label for="file">Attachment</label>
+            <input type="file" name="attachment" id="attachment" accept="image/*" multiple>
 
 
-    <div class="multimedia">
-        <audio controls loop autoplay>
-            <source src="media/falling-zayner-main-version-03-15-2157.mp3" type="audio/mpeg">
-        </audio> <br>
-     
-        <video controls loop autoplay width="300">
-            <source src="media/IMG_1167.MOV">
-            <p>Stay warm</p>
-        </video>
-    </div>
+        </form>
+    </main>
 
 
 
@@ -59,7 +61,5 @@
         <a href="../about/legal.html">Terms of Service</a>
         <a href="../about/contacfinfo.html">Contact Info</a>
     </footer>
-
-
 </body>
 </html>
