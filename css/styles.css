@@ -18,15 +18,45 @@ nav {
     border-bottom: 1px solid #666;;
 }
 table {
-    border: 3px solid red;
+    border: 1px solid #3f2b21;
+    border-collapse: collapse;
     font-size: 1rem;
 }
-tr {
-    background-color: #ccc;;
+td, th {
+    border-bottom: 1px solid #CCAE51;
+    padding: 0.5rem;
 }
-td {
-    border: 3px dotted blue;
+tfoot tr:last-child td {
+    border-bottom: none;
 }
+caption {
+    font-weight: bold;
+    text-align: left;
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #ccae51;
+}
+th {
+    text-align: left;
+    background-color: #ccae51;
+    color: white;
+}
+thead tr:first-child, thead tr:first-child th {
+    background-color: #3f2b21;
+    text-align: center;
+    border-left: 1px solid white;
+    font-size: 1.3rem;
+}
+tfoot tr {
+    background-color: #3f2b21;
+    color: white;
+    font-weight: bold;
+}
+tbody tr:nth-child(even) {
+    background-color: rgba(204,174,81,0.2);
+}
+
+
 img {
     margin: 0 10px;
     padding: 10px;
@@ -70,4 +100,10 @@ a:active {
 body.ht {
     font-size: 12pt;
     background: url("../images/html.png") no-repeat right 20px top 100px;
+}
+
+
+
+.tablescroll {
+    overflow: auto;
 }

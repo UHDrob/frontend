@@ -91,55 +91,88 @@
     <p><a href="#top">Back to Top</a></p>
 
     <h3 id="tables">Tables</h3>
-    <table>
-        <tr>
-            <td> Item #	  </td>
-            <td> Product or Service  </td>
-            <td> Price (ea.) </td>	
-            <td> Retail Price (Case)  </td>
-            <td>  Case Discount  </td>
-            <td> 12+ Case Price  </td>
-            <td>  12+ Case Discount </td>
+    <div class="tablescroll role="region" aria-labelledby="pricelist" tabindex="0"> 
+        <table>
+            <caption id="pricelist">Wisdom Pet Medicine Product Price List</caption>
             
-        </tr>
-        <tr>
-            <td>100050  </td>
-            <td>Advance Pet Oral Care Toothbrush and Toothpaste</td>	
-            <td>$9.55</td>	
-            <td>$108.87</td> 	
-            <td>$5.73</td>	
-            <td>$103.14</td>	
-            <td>$11.46</td>	
-        </tr>
-        <tr>
-            <td>  100043</td>
-           	<td> Basic Teeth Cleaning and Exam</td>
-            <td>$100.00 </td>
-            <td> $1,140.00 </td>
-           	<td> $60.00</td>
-            <td>  $1,080.00 </td>
-           	<td> $120.00 </td>
-            
-        </tr>
-        <tr>
-            100013	
-            Calm Cat Anxiety Relief Spray	
-            $9.49 	
-            $108.19	
-            $5.69	
-            $102.49	
-            $11.39
-        </tr>
-        <tr>
-            100041	
-            Cat Hairball Remedy Gel	
-            $6.00 	
-            $68.40	
-            $3.60	
-            $64.80	
-            $7.20
-        </tr>
-    </table>
+            <colgroup>
+                <col class="item">
+                <col>
+                <col span="2" class="retail">
+                <col span="3" class="case">
+            </colgroup>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <th colspan="2">Retail</th>
+                    <th colspan="3">Case</th>
+                </tr>
+                <tr>
+                    <th scope="col"> Item #	  </th>
+                    <th scope="col"> Product or Service  </th>
+                    <th scope="col"> Price (ea.) </th>	
+                    <th scope="col"> Retail Price (Case)  </th>
+                    <th scope="col">  Case Discount  </th>
+                    <th scope="col"> 12+ Case Price  </th>
+                    <th scope="col">   12+ Case Discount </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100050  </td>
+                    <td>Advance Pet Oral Care Toothbrush and Toothpaste</td>	
+                    <td>$9.55</td>	
+                    <td>$108.87</td> 	
+                    <td>$5.73</td>	
+                    <td>$103.14</td>	
+                    <td>$11.46</td>	
+                </tr>
+                <tr>
+                    <td>  100043</td>
+                       <td> Basic Teeth Cleaning and Exam</td>
+                    <td>$100.00 </td>
+                    <td> $1,140.00 </td>
+                       <td> $60.00</td>
+                    <td>  $1,080.00 </td>
+                       <td> $120.00 </td>
+                    
+                </tr>
+                <tr>
+                    <td> 100013 </td>
+                    <td> Calm Cat Anxiety Relief Spray  </td>
+                    <td> $9.49  </td>
+                    <td> $108.19	 </td>
+                    <td> $5.69 </td>
+                    <td> $102.49	  </td>
+                    <td> $11.39 </td>
+                </tr>
+                <tr>
+                    <td> 100041 </td>
+                    <td> Cat Hairball Remedy Gel </td>
+                    <td>  $6.00  </td>
+                    <td> $68.40 </td>
+                    <td> $3.60 </td>
+                    <td> $64.80 </td>
+                    <td> $7.20 </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>Totals of these columns</td>
+                    <td>$124.04</td>
+                    <td>$1424.46</td>
+                    <td>$75.02</td>
+                    <td>$1350.43</td>
+                    <td>$150.05</td>
+    
+                </tr>
+            </tfoot>
+    
+        </table>
+    </div>
+
 
 
 
