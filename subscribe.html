@@ -23,38 +23,53 @@
             </ul>
         </nav>
     </header>
+    <div>
+        <form id="questions"  method="get" action="received.html">    
+            <br><br>
 
-        <form id="questions"  method="get" action="received.html">
-            
-            <input type="text" name="name" id="name" placeholder="first name (required)"><br>
-
-            <input type="email" name="email" id="email" placeholder="email (required)"><br>
-            <input type="email" name="email" id="email" placeholder="verify email (required)"><br>
-
+            <input type="text" name="name" id="name" placeholder="first name (required)">
+            <input type="text" id="lastname" name="lastname" placeholder="last name"><br><br>
+            <input type="email" name="email" id="email" placeholder="email (required)">
+            <input type="email" name="email" id="email" placeholder="verify email (required)"><br><br>
+            <input type="url" id="linked" name="linked" placeholder="Your linked site"><br>
             <label for="password">Password</label>
             <input type="password" name="password" id="password"><br>
 
             <label for="phone">Phone number</label>
-            <input type="tel" name="phone" id="phone"><br>
+            <input type="tel" name="phone" id="phone"><br><br>
 
-            <label for="message">Message</label><br>
+            <fieldset>
+                <legend>What is your main topic?</legend>
+                <input type="radio" name="topic" id="html" value="html" checked><label for="html" ><label for="html">HTML</label><br>
+                <input type="radio" name="topic" id="css" value="css"><label for="css"><label for="css">CSS</label><br>
+                <input type="radio" name="topic" id="javascript" value="javascript"><label for="javascript">Javascript</label><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>What other tools or frameworks do you use?</legend>
+                <input type="checkbox" name="technology" id="bootstrap" value="bootstrap" checked><label for="bootstrap" >Bootstrap</label><br>
+                <input type="checkbox" name="technology" id="css" value="photoshop"><label for="photoshop">Photoshop</label><br>
+                <input type="checkbox" name="technology" id="javascript" value="javascript"><label for="javascript">Javascript</label><br><br>
+            </fieldset>
+
+
+            <label for="message">Message/Question</label><br>
             <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
 
             <label for="date">Date</label>
             <input type="date" name="date" id="date"><br>
 
             <label for="file">Attachment</label>
-            <input type="file" name="attachment" id="attachment" accept="image/*" multiple>
-
-
+            <input type="file" name="attachment" id="attachment" accept="image/*" multiple><br>
+            <br>
+            <button type="submit">Submit <strong> message/questions </strong></button><br><br><br>
+            <input type="reset" value="Reset"><br>
         </form>
+    </div>
     </main>
-
-
 
     <footer>
         <p><small>&copy; 2022, Roberto Gomez. All rights reserved.</small></p>
-        <p>Site last updated: <time datetime="2022-02-04"> Feb 5, 2022   </time></p>
+        <p>Site last updated: <time datetime="2022-02-06"> Feb 6, 2022   </time></p>
 
         <a href="../about/about.html">About</a>
         <a href="../about/privacy.html">Privacy Policy</a>
