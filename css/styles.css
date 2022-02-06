@@ -23,16 +23,7 @@ fieldset {
 legend {
     color: green;
 }
-input [type="text"]{
-    width: 8em;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: #fdedec;
-}
-textarea {
-    vertical-align: middle;
-}
+
 table {
     border: 1px solid #3f2b21;
     border-collapse: collapse;
