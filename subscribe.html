@@ -26,7 +26,9 @@
 
         <form id="questions"  method="get" action="received.html">
             
-            <input type="text" name="name" id="name" placeholder="first name (required)"><br>
+            <label for="intro">About you</label><br>
+            <input type="text" name="firstname" id="firstname" placeholder="first name (required)"><br>
+            <input type="text" name="lastname" id="lastname" placeholder="last name (required)"><br>
 
             <input type="email" name="email" id="email" placeholder="email (required)"><br>
             <input type="email" name="email" id="email" placeholder="verify email (required)"><br>
@@ -44,8 +46,9 @@
             <input type="date" name="date" id="date"><br>
 
             <label for="file">Attachment</label>
-            <input type="file" name="attachment" id="attachment" accept="image/*" multiple>
+            <input type="file" name="attachment" id="attachment" accept="image/*" multiple><br><br>
 
+            <input type="submit">
 
         </form>
     </main>
