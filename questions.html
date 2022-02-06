@@ -13,7 +13,7 @@
     <!--Last Updated Feb 5, 2022-->
     <header>
         <h1> Front End Developer</h1>
-        <h2>SUBSCRIBE</h2>
+        <h2>QUESTIONS?</h2>
         <nav aria-label="main menu" class="navbar">
             <ul>
                 <li> <a href="index.html">Home</a></li>
@@ -26,14 +26,12 @@
     <div>
         <form id="questions"  method="get" action="received.html">    
             <br><br>
-
-        <form id="questions"  method="get" action="received.html">
-            
+    
             <label for="intro">About you</label><br>
-            <input type="text" name="firstname" id="firstname" placeholder="first name (required)"><br>
-            <input type="text" name="lastname" id="lastname" placeholder="last name (required)"><br>
+            <input type="text" name="firstname" id="firstname" placeholder="First name (required)">
+            <input type="text" name="lastname" id="lastname" placeholder="Last name "><br>
 
-            <input type="email" name="email" id="email" placeholder="email (required)"><br>
+            <input type="email" name="email" id="email" placeholder="email (required)">
             <input type="email" name="email" id="email" placeholder="verify email (required)"><br>
 
             <label for="phone">Phone number</label>
@@ -43,7 +41,8 @@
                 <legend>What is your main topic?</legend>
                 <input type="radio" name="topic" id="html" value="html" checked><label for="html" ><label for="html">HTML</label><br>
                 <input type="radio" name="topic" id="css" value="css"><label for="css"><label for="css">CSS</label><br>
-                <input type="radio" name="topic" id="javascript" value="javascript"><label for="javascript">Javascript</label><br><br>
+                <input type="radio" name="topic" id="javascript" value="javascript"><label for="javascript">Javascript</label><br>
+                <input type="radio" name="topic" id="other" value="other"><label for="other">Other</label><br><br>
             </fieldset>
             <fieldset>
                 <legend>What other tools do you use?</legend>
@@ -57,11 +56,8 @@
             <label for="message">Message/Question</label><br>
             <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
 
-            <label for="date">Date</label>
-            <input type="date" name="date" id="date"><br>
-
-            <label for="file">Attachment</label>
-            <input type="file" name="attachment" id="attachment" accept="image/*" multiple><br><br>
+            <label for="file">Attachment</label><br>
+            <input type="file" name="attachment" id="attachment" accept="image/*" multiple><br><br><br><br>
 
             
             <button type="submit">Submit <strong>question/comment</strong></button><br><br>

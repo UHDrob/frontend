@@ -17,6 +17,12 @@ nav {
     border-right: 1px solid #666;
     border-bottom: 1px solid #666;;
 }
+fieldset {
+    color:blue;
+}
+legend {
+    color: green;
+}
 table {
     border: 1px solid #3f2b21;
     border-collapse: collapse;
