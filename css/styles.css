@@ -19,9 +19,32 @@ nav {
 }
 fieldset {
     color:blue;
+    width: 40%;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    min-width: 200px;
 }
-legend {
+fieldset:last-of-type {
+    margin-bottom: 0;
+}
+legend{
     color: green;
+}
+label {
+    display: block;
+    padding-top: 0.5em;
+    margin-top: 1em;
+}
+label:first-of-type {
+    margin-top: 0;
+}
+input {
+    padding: .5em;
+    border: solid 1px #999;
+}
+.checks label {
+    display: inline-block;
+    padding-top: 0;
 }
 
 table {

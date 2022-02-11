@@ -26,13 +26,18 @@
     <div>
         <form id="questions"  method="get" action="received.html">    
             <br><br>
-    
-            <label for="intro"><h2> About you </h2></label><br>
-            <input type="text" name="firstname" id="firstname" placeholder="First name (required)">
-            <input type="text" name="lastname" id="lastname" placeholder="Last name "><br>
+            <fieldset id="about">
+                <label for="intro"><h2> About you </h2></label><br>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" placeholder=" (required)"><br>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="optional"><br>
+                <label for="email">  Email</label>
+                <input type="email" name="email" id="email" placeholder="email (required)"><br>
+                <label for="email">Verify</label>
+                <input type="email" name="email" id="email" placeholder="verify email (required)"><br><br><br>
+            </fieldset>
 
-            <input type="email" name="email" id="email" placeholder="email (required)">
-            <input type="email" name="email" id="email" placeholder="verify email (required)"><br><br><br>
 
             <fieldset>
                 <legend>What is your main topic?</legend>
@@ -52,7 +57,7 @@
 
 
             <label for="message">Message/Question</label><br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+            <textarea name="message" id="message" cols="70" rows="10"></textarea><br>
 
             <label for="file">Attachment</label><br>
             <input type="file" name="attachment" id="attachment" accept="image/*" multiple><br><br><br><br>
