@@ -88,7 +88,7 @@ tbody tr:nth-child(even) {
 }
 
 
-img {
+side img {
     margin: 0 10px;
     padding: 10px;
     vertical-align: middle;
@@ -96,13 +96,13 @@ img {
     float: left;
     clip-path: ellipse(50% 40% at 50% 50%);
 }
-ul {
+nav ul {
     display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li {
+nav li {
     display: inline-block;
     padding: 20px 0px;
 }

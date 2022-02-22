@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Fron End Developer - HTML</title>
 </head>
+
 <body class="ht">
 
     <header id="top">
@@ -21,61 +23,46 @@
             </ul>
         </nav>
     </header>
+    <nav>
+        <ul>
+            <li><br><a href="#syntax">Syntax</a><br></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#tables">Tables</a></li>
+        </ul>
+    </nav>
+
+    <figure class="side">
+        <img src="images/airplanesunset-300x300.png" alt=airplace in sunset"">
+        <figcaption>
+            <p>Let's begin!</p>
+        </figcaption>
+    </figure>
+
+    <h3 id="elements">HTML Elements</h3>
+    <p>To write HTML, we pick from a set of standard Elements that all broesers recognize</p>
     <ul>
-        <li><br><a href="#syntax">Syntax</a><br></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#tables">Tables</a></li>
+        <li> <strong>p</strong> paragraph</li>
+        <li> <strong>h1 - h6</strong> headings</li>
+        <li> <strong>img</strong> embeds an image</li>
+        <li> <strong>form</strong> represents a form</li>
     </ul>
-        <figure>
-            <img src="images/airplanesunset-300x300.png" alt=airplace in sunset"">
-            <figcaption>
-                <p>Let's begin!</p>
-            </figcaption>
-        </figure>
-        
-    <h3 id="syntax">Syntax</h3>
-    <p>Element = Opening tag + content + closing tag</p>
-    <p> This is a <em>paragraph</em>.</p> 
-    <code>   &lt;p> This is a paragraph &lt;/p>   </code>  
-    <p> These are a <em>headlines</em>. We should use the level of headline that makes sense, 
-        based on the semantic meaning of content.</p>
-    <code>     &lt;h5> h1 h2 h3 h4 h5 &lt;/h5>           </code> 
-
-
-    <p>Some words may be <strong>bold</strong></p>
-    <p>An ordered list:</p>
-    <ol>
-        <li>list item &star;</li>
-        <li>list item</li>
-    </ol>
-    <p>Unordered list</p>
+    <a href="../html/exercise001.html">excercise 001</a><br>
+    <img src="images/skeleton.png" alt="Basic skeleton code for HTML file"> <br> <br>
+    <p> Use F1 - Format Document to fix allignment</p>
     <ul>
-        <li>other item</li>
-        <li>other item</li>
+        <li>  <strong>  The Anchor element      </strong>
+               </li>
+            <ul>
+                <li> <code>   &lt   a href="https://example.com"  &gt  Website  &lt /a &gt  </code>    </li>
+                <li> <code>   &lt   a href="mailto:r/gomez@example.com"  &gt  Email &lt /a &gt  </code>    </li>
+                <li> <code>   &lt   a href="tel:+12345679"  &gt  Phone  &lt /a &gt  </code>    </li>
+            </ul>
+        <li> <strong>  The Image Embeded element  </strong>         </li>
+            <ul>
+                <li>   <code>   &lt   img   src="//media/examples/one.jpg"   alt="Grapefruit slice"   width="300"  &gt                        </code>      </li>
+            </ul>
     </ul>
-    <p>INLINE elements: Q stands for quotes, strong b i em</p>
 
-    <p>break between lines <em>br</em></p>
-    <p>
-        Winter brings the cold of February<br>
-        But remember it is only <br>
-    </p>
-    <p>To keep format use <em>pre</em></p>
-    <pre>
-        Spring is the season that comes next
-        Focus on that, it puts it all in context.
-        
-        And then the heat of summer does arrive
-        And we start wishing for the cold to survive
-    </pre>
-    <p>small tag</p>
-    <small> &copy209 Roberto &trade;</small><br>
-    2<sup><small><small> 5</small> </small></small></sup> <sub>8</sub>    
-
-    <p>blockquote editable</p>
-    <blockquote contenteditable="true">Edit this content to add your own quote.</blockquote>
-    <p>cite editable</p>
-    <cite contenteditable="true">Your name here</cite>
 
     <h3 id="links">Links</h3>
     <p>
@@ -91,10 +78,10 @@
     <p><a href="#top">Back to Top</a></p>
 
     <h3 id="tables">Tables</h3>
-    <div class="tablescroll role="region" aria-labelledby="pricelist" tabindex="0"> 
+    <div class="tablescroll role=" region" aria-labelledby="pricelist" tabindex="0">
         <table>
             <caption id="pricelist">Wisdom Pet Medicine Product Price List</caption>
-            
+
             <colgroup>
                 <col class="item">
                 <col>
@@ -109,48 +96,48 @@
                     <th colspan="3">Case</th>
                 </tr>
                 <tr>
-                    <th scope="col"> Item #	  </th>
-                    <th scope="col"> Product or Service  </th>
-                    <th scope="col"> Price (ea.) </th>	
-                    <th scope="col"> Retail Price (Case)  </th>
-                    <th scope="col">  Case Discount  </th>
-                    <th scope="col"> 12+ Case Price  </th>
-                    <th scope="col">   12+ Case Discount </th>
+                    <th scope="col"> Item # </th>
+                    <th scope="col"> Product or Service </th>
+                    <th scope="col"> Price (ea.) </th>
+                    <th scope="col"> Retail Price (Case) </th>
+                    <th scope="col"> Case Discount </th>
+                    <th scope="col"> 12+ Case Price </th>
+                    <th scope="col"> 12+ Case Discount </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>100050  </td>
-                    <td>Advance Pet Oral Care Toothbrush and Toothpaste</td>	
-                    <td>$9.55</td>	
-                    <td>$108.87</td> 	
-                    <td>$5.73</td>	
-                    <td>$103.14</td>	
-                    <td>$11.46</td>	
+                    <td>100050 </td>
+                    <td>Advance Pet Oral Care Toothbrush and Toothpaste</td>
+                    <td>$9.55</td>
+                    <td>$108.87</td>
+                    <td>$5.73</td>
+                    <td>$103.14</td>
+                    <td>$11.46</td>
                 </tr>
                 <tr>
-                    <td>  100043</td>
-                       <td> Basic Teeth Cleaning and Exam</td>
+                    <td> 100043</td>
+                    <td> Basic Teeth Cleaning and Exam</td>
                     <td>$100.00 </td>
                     <td> $1,140.00 </td>
-                       <td> $60.00</td>
-                    <td>  $1,080.00 </td>
-                       <td> $120.00 </td>
-                    
+                    <td> $60.00</td>
+                    <td> $1,080.00 </td>
+                    <td> $120.00 </td>
+
                 </tr>
                 <tr>
                     <td> 100013 </td>
-                    <td> Calm Cat Anxiety Relief Spray  </td>
-                    <td> $9.49  </td>
-                    <td> $108.19	 </td>
+                    <td> Calm Cat Anxiety Relief Spray </td>
+                    <td> $9.49 </td>
+                    <td> $108.19 </td>
                     <td> $5.69 </td>
-                    <td> $102.49	  </td>
+                    <td> $102.49 </td>
                     <td> $11.39 </td>
                 </tr>
                 <tr>
                     <td> 100041 </td>
                     <td> Cat Hairball Remedy Gel </td>
-                    <td>  $6.00  </td>
+                    <td> $6.00 </td>
                     <td> $68.40 </td>
                     <td> $3.60 </td>
                     <td> $64.80 </td>
@@ -166,10 +153,10 @@
                     <td>$75.02</td>
                     <td>$1350.43</td>
                     <td>$150.05</td>
-    
+
                 </tr>
             </tfoot>
-    
+
         </table>
     </div>
 
@@ -184,7 +171,7 @@
 
     <footer>
         <p><small>&copy; 2022, Roberto Gomez. All rights reserved.</small></p>
-        <p>Site last updated: <time datetime="2022-02-04"> Feb 5, 2022   </time></p>
+        <p>Site last updated: <time datetime="2022-02-21"> Feb 21, 2022 </time></p>
 
         <a href="../about/about.html">About</a>
         <a href="../about/privacy.html">Privacy Policy</a>
@@ -192,4 +179,5 @@
         <a href="../about/contacfinfo.html">Contact Info</a>
     </footer>
 </body>
+
 </html>
