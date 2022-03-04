@@ -1,0 +1,12 @@
+.shipped {
+    background-color: rgb(34, 192, 34);
+    color:white;
+}
+.pending {
+    background-color: rgb(44, 175, 226);
+    color:white;
+}
+.processing {
+    background-color: orangered;
+    color:white;
+}
