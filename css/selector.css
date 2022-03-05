@@ -5,13 +5,16 @@ button {
     font-size: 20px;
     background-color: #a8dadc;
 }
+button:hover {
+    color #1d3557;
+}
 h1,h2 {
     color: #1d3557;
 }
 
 h2 + button {
     font-size: 20px;
-    background-color: gray;
+
 }
 
 #signup {
