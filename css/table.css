@@ -1,43 +1,44 @@
 body {
     background-color: lightgray;
-
+    padding: 5%;
 }
 
-h2 {
-    background-color: #011;
+.maintitle {
+    background-color: rgb(18, 53, 53);
     color: white;
-    margin: 0 35px;
+    margin: 0px;
     line-height: 2;
     font-family: sans-serif;
-    
+    padding-left: 15px;
+    font-weight: bold;
 }
 
-h3 {
+.title {
     color: white;
-    background-color: gray;
+    background-color: rgb(110, 116, 110);
     text-align: center;
-    margin: 10px 70px;
+    margin: 10px 50px;
     line-height: 2;
     font-family: sans-serif;
 }
 
 table {
-    margin: 0 70px;
+    margin: 0 50px 5px 50px;
     text-align: left;
 }
 
 th {
     padding-top: 20px;
+    padding-left: 17px;;
     color: gray;
-    text-align: center;
-    
+    text-align: left;
 }
 
 td {
     padding: 10px 20px;
     font-family: sans-serif;
     color: gray
-
+    text-align: left;
 }
 
 div {
@@ -49,14 +50,12 @@ button {
     border: 0;
     border-radius: 10%;
 }
-button:hover {
-    color #1d3557;
-}
 
 .data {
-    background-color: 
-    white;
-    margin: 10px 35px;
+    background-color:  white;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
 }
 
 #shipped {

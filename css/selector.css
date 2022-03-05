@@ -5,8 +5,16 @@ button {
     font-size: 20px;
     background-color: #a8dadc;
 }
+button:active {
+    background-color:#02c39a;
+}
 button:hover {
-    color #1d3557;
+    background-color: 
+    font-size: 10px;
+}
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
 }
 h1,h2 {
     color: #1d3557;
@@ -27,8 +35,24 @@ h2 + button {
     color:#f1faee;
     font-size:16px;
 }
-.post span a {
-    color: #a8dadc;
+
+.post a {
+    color:#457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+.post a:hover {
+    text-decoration: underline;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+p::first-letter{
+    color: purple;
+}
+p::selection {
+    background-color: #fcbf49;
 }
 
 footer > a {
@@ -38,7 +62,7 @@ input [type="password"] {
     color: greenyellow;
 }
 section[class="post"] {  /*  this could also be like section.post  */
-    background-color: lightgreen;
+    background-color: rgb(162, 204, 162);
 }
 
 a[href*="google"] {
