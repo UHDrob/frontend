@@ -1,0 +1,43 @@
+body {
+    background-color: #f1faaee;
+}
+button {
+    font-size: 20px;
+    background-color: #a8dadc;
+}
+h1,h2 {
+    color: #1d3557;
+}
+
+h2 + button {
+    font-size: 20px;
+    background-color: gray;
+}
+
+#signup {
+    color: #f1faee;
+    background-color: #1d3557;
+}
+
+.tag {
+    background-color: #e63946;
+    color:#f1faee;
+    font-size:16px;
+}
+.post span a {
+    color: #a8dadc;
+}
+
+footer > a {
+    color: #e63946;
+}
+input [type="password"] {
+    color: greenyellow;
+}
+section[class="post"] {  /*  this could also be like section.post  */
+    background-color: lightgreen;
+}
+
+a[href*="google"] {
+    color:red;
+}

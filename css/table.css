@@ -1,12 +1,71 @@
-.shipped {
+body {
+    background-color: lightgray;
+
+}
+
+h2 {
+    background-color: #011;
+    color: white;
+    margin: 0 35px;
+    line-height: 2;
+    font-family: sans-serif;
+    
+}
+
+h3 {
+    color: white;
+    background-color: gray;
+    text-align: center;
+    margin: 10px 70px;
+    line-height: 2;
+    font-family: sans-serif;
+}
+
+table {
+    margin: 0 70px;
+    text-align: left;
+}
+
+th {
+    padding-top: 20px;
+    color: gray;
+    text-align: center;
+    
+}
+
+td {
+    padding: 10px 20px;
+    font-family: sans-serif;
+    color: gray
+
+}
+
+div {
+    margin-right: 100px;
+    
+}
+
+button {
+    border: 0;
+    border-radius: 10%;
+}
+
+.data {
+    background-color: white;
+    margin: 10px 35px;
+    border: #011;
+    border-width: 10px;
+}
+
+#shipped {
     background-color: rgb(34, 192, 34);
-    color:white;
+    color:cyan;
 }
-.pending {
+#pending {
     background-color: rgb(44, 175, 226);
-    color:white;
+    color:cyan;
 }
-.processing {
+#processing {
     background-color: orangered;
-    color:white;
+    color:cyan;
 }

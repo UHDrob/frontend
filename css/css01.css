@@ -1,0 +1,21 @@
+body {
+    background-color: skyblue;
+}
+
+h1 {
+    color: teal;
+    background-color: white;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: #f78120 underline wavy;
+    letter-spacing: 15px;
+    font-size: 80px;
+    font-family: monospace;
+}
+button {
+    color: magenta;
+    background-color: cyan;
+}
+p {
+    color: olive;
+}
