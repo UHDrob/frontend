@@ -10,6 +10,8 @@ body {
     line-height: 2;
     font-family: sans-serif;
     padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-weight: bold;
 }
 
@@ -32,13 +34,15 @@ th {
     padding-left: 17px;;
     color: gray;
     text-align: left;
+    font-weight: bold;
 }
 
 td {
     padding: 10px 20px;
     font-family: sans-serif;
-    color: gray
+    color: rgb(119, 97, 97);
     text-align: left;
+    font-size: 13px;
 }
 
 div {
