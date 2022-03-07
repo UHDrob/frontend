@@ -1,0 +1,10 @@
+.question {
+    font-size: large;
+    font-weight: bold;
+    color: green;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+}

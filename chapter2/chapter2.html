@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/chapter2.css">
+    <title>Chapter 2</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Chapter 2</h1>
+        <h2>How the Web Works</h2>
+        <section>
+            <ul>
+                <li>2.1 Internet Protocols</li>
+                <ul>
+                    <li>2.1.1 A Layered Architecture</li>
+                    <li>2.1.2 Link Layer</li>
+                    <li>2.1.3 Internet Layer</li>
+                    <li>2.1.4 Transport Layer</li>
+                    <li>2.1.5 Application Layer</li>
+                </ul>
+                <li>2.2 Domain Name System</li>
+                <ul>
+                    <li>2.2.1 Name Levels</li>
+                    <li>2.2.2 Name Registration</li>
+                    <li>2.2.3 Address Resolution</li>
+                </ul>
+                <li>2.3 Uniform Resource Locators</li>
+                <ul>
+                    <li>2.3.1 Protocol</li>
+                    <li>2.3.2 Domain</li>
+                    <li>2.3.3 Port</li>
+                    <li>2.3.4 Path</li>
+                    <li>2.3.5 Query String</li>
+                    <li>2.3.6 Fragment</li>
+                </ul>
+                <li>2.4 Hypertext Transfer Protocol</li>
+                <ul>
+                    <li>2.4.1 Headers</li>
+                    <li>2.4.2 Request Methods</li>
+                    <li>2.4.3 Response Codes</li>
+                </ul>
+                <li>2.5 Web Browsers</li>
+                <ul>
+                    <li>Fetching a web page</li>
+                    <li>Broser Rendering</li>
+                    <li>Broswer Caching</li>
+                    <li>Browser features</li>
+                    <li>Browser Extensions</li>
+                </ul>
+                <li>2.6 Web Servers</li>
+                <ul>
+                    <li>2.6.1 Operating Sytems</li>
+                    <li>2.6.2 Web Server Software</li>
+                    <li>2.6.3 Database Software</li>
+                    <li>2.6.4 Scripting Software</li>
+                </ul>
+            </ul>
+        </section>
+        <section>
+            <h3>Review Questions</h3>
+            <p class="question">Describe the main steps in the domain name registration process</p>
+            <ol>
+                <li>Decide on a top-level domain (.com) and a second-level domain (funwebdev)</li>
+                <li>Choose a domain registrar or a reseller (a company such as a web host that works with a registrar</li>
+                <li>Registrars will check if domain is available by asking Registry for the TLD</li>
+                <li>Complete the registration procedures with includes WHOIS contact information (includes DNS information) and payment</li>
+                <li>Registry will push DNS information for domain to TLD name server</li>
+                <li>Enjoy the new domain... You now have purchased the rights to use it</li>
+            </ol>
+            <p class="question">What are the tow main benefits of DNS?</p>
+            <ol>
+                <li>Easy to use</li>
+                <li>Sites and emails systems can move to larger and more powerful facilities without disrupting service</li>
+            </ol>
+            <p class="question">How many levels can a domain name have? What are generic top-level domains?</p>
+            <p>All domains names have at least a top-level domain (TLD) name and a second-level domain (SLD) name. Most websites maintain a third-level WWW subdomain and perhaps others.</p>
+            <p>TLDs include .us, .ca, .uk, and .au. At the time of writing, there were 252 codes registered. These codes are under the control of the countries which they represent.</p>
+            <p class="question">Describe the main steps in the domain name address resolution process.</p>
+            <ol>
+                <li>The resolution process starts at the user's computer. When the URL is requested, the browser will begin by seeing if it already has the IP address for the domain in its cache. if it does, it can jump to step 13</li>
+                <li>if the browser doesn;t know the IP address for the requested site, it will delegate the task to the DNS resolver, a software agent that is part of the operating systems. The DNS resolver also keeps a cache of frequently requested domains.</li>
+                <li>otherwise, it must ask for outside help, which in this case is a nearvy DNS server, a special server that processes DNS requests. This server keeps a more substancial cache of domain name/IP address pairs. If the requested domain is in its cache then the process jumps to step 11.</li>
+                <li>If the local DNS server doesn't have the IP address for the domain in its cache, then it must ask other DNS servers for the answer. Thankfully, the domain system has a greate deal of redundancy built into it. This means that in general there are many servers that have the answers for any fiven DNS requests. This redundancy exists not only at the local level but at the global level as well.</li>
+                <li>If the local DNS server cannot find the answer to the request from an alternate DNS server, then it must get it from the appropriate top-level domain (TLD) name server. Our lcoal DNS server might already have a list of the addresses of the appropriate TLD name servers in its cache. In such a case, the process can jump to step7.</li>
+                <li>if the local DNS server does not already know the address of the requested TLD server, then it must ask a root name server for that information. The DNS toot name servers astore the address of TLD name servers. IANA authorized 13 root servers, so all root requests will fo to one of those 13 roots. In practice, these 13 machines are mirrored and distributed around the world. There are over 500 root server machines.</li>
+                <li>After receiving the address of the TLD name server for the requested domain, the local DNS server can now ask the TLD name server for the address of the requested domain. As part of the domain registration process, the address of the domain's DNS servers are sent to the TLD name servers, so this is the information that is returned to the local DNS server in step 8</li>
+                <li>The user's local DNS server can now ask the DNS server for the requested domain. It should receive the correct IP address of the web server for that domain. This address will be stored in its own cache so that future requests for this domain will be speedier. That IP address can finally be returned to the DNS resolver in the requesting computer</li>
+                <li>The browser will eventually receive the correct IP address for the requested domain. If the local DNS server were unable to find the IP address, it woudl return a failed response, which in turn would cause the browser to display an error message.</li>
+                <li>Now that it knows the desired IP adddress, the browser can finally send out the request to the web server, which result in the web server responding with the requested resource.</li>
+            </ol>
+            <p class="question">How many requests are involved in displaying a single web page?</p>
+            <p>The most common requests are the GET and POST request, along with the HEAD request.</p>
+            <p class="question">Describe the four layesr in the four-layer network model</p>
+            <ul>
+                <li>Application Layer:</li>
+                <ul>
+                    <li>Higher protocols that allow applications to interact with transport layer</li>
+                    <li>HTTP, FTP, POP, etx</li>
+                </ul>
+                <li>Transport Layer</li>
+                <ul>
+                    <li>Ensures transmissions arrive in order and without error</li>
+                    <li>TCP, UDP</li>
+                </ul>
+                <li>Internet Layer</li>
+                <ul>
+                    <li>Establishes connection, routing, and addressing</li>
+                    <li>IPv4, IPv6</li>
+                </ul>
+                <li>Link Layer</li>
+                <ul> 
+                    <li>Responsible for physical transmission of raw bits</li>
+                    <li>MAC</li>
+                </ul>
+            </ul>
+            <p class="question">What is the Internet Protocol (IP)? Why is it important for web developers?</p>
+            <p>The Internet uses the Internet Protocol (IP) addresses, which are numeric codes that uniquely destinations on the Internet. </p>
+            <p>The details of the IP addresses can be important to a web developer. These are ocassions when one needs to track, record, and compare the IP address of a given web request. </p>
+            <p class="question">How many distinct domains can be hosted at a single IP address?</p>
+            <p>Only one</p>
+            <p class="question">What is LAMP stack? What are some of its common variants?</p>
+            <p></p>
+            <p class="question">How can browswer extensions help and hinder web developers?</p>
+            <p></p>
+            <p class="question">What is browser caching? What value does it provide?</p>
+            <p></p>
+            <p class="question">What are the four key components of a web software stack?</p>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
