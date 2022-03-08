@@ -9,12 +9,14 @@
 </head>
 <body>
     <header>
-
-    </header>
-    <main>
         <h1>Chapter 2</h1>
         <h2>How the Web Works</h2>
+        <a href="../index.html">Back To Main</a>
+    </header>
+    <main>
+
         <section>
+            <h3>Objectives</h3>
             <ul>
                 <li>2.1 Internet Protocols</li>
                 <ul>
@@ -123,7 +125,7 @@
             <p>The Internet uses the Internet Protocol (IP) addresses, which are numeric codes that uniquely destinations on the Internet. </p>
             <p>The details of the IP addresses can be important to a web developer. These are ocassions when one needs to track, record, and compare the IP address of a given web request. </p>
             <p class="question">How many distinct domains can be hosted at a single IP address?</p>
-            <p>Only one</p>
+            <p>The host header was introduced in HTTP 1.1. and it allows multiple websites to be hosted from the same IP address. Since requests for different domains can arrive at the same IP, the host header tells the server which domain at this IP address we are interested in.</p>
             <p class="question">What is LAMP stack? What are some of its common variants?</p>
             <p></p>
             <p class="question">How can browswer extensions help and hinder web developers?</p>
