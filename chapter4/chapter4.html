@@ -5,18 +5,280 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/chapter4.css">
+    <link rel="stylesheet" href="../css/chapter.css">
     <title>Chapter 4</title>
 </head>
 <body>
     <header>
-
-    </header>
-    <main>
         <h1>Chapter 4</h1>
         <h2>Introduction to CSS</h2>
+    </header>
+    <main>
         <section>
-            <h3>Key Terms</h3>
+            <h3>Objectives</h3>
+            <ul>
+                <li>4.1 What is CSS</li>
+                <ul>
+                    <li>4.1.1 Benefits of CSS</li>
+                    <li>4.1.2 CSS versions</li>
+                    <li>4.1.3 Browser Adoption</li>
+                </ul>
+                <li>4.2 CSS Syntax</li>
+                <ul>
+                    <li>4.2.1 Selectors</li>
+                    <li>4.2.2 Properties</li>
+                    <li>4.2.3 Values</li>
+                </ul>
+                <li>4.3 Location of Styles</li>
+                <ul>
+                    <li>4.3.1 Inline Styles</li>
+                    <li>4.3.2 Embedded Style Sheet</li>
+                    <li>4.3.3 External Style Sheet</li>
+                </ul>
+                <li>4.4 Selectors</li>
+                <ul>
+                    <li>4.4.1 Element Selectors</li>
+                    <li>4.4.2 Class Selectors</li>
+                    <li>4.4.3 Id Selectors</li>
+                    <li>4.4.4 Attribute Selectors</li>
+                    <li>4.4.5 Pseude-Element and Pseudo-Class Selectors</li>
+                    <li>4.4.6 Contextual Selectors</li>
+                </ul>
+                <li>4.5 The Cascade: How Styles Interact
+                    <ul>
+                        <li>4.5.1 Inheritance</li>
+                        <li>4.5.2 Specificity</li>
+                        <li>4.5.3 Location</li>
+                    </ul>
+                </li>
+                <li>4.6 The Box Model</li>
+                <ul>
+                    <li>4.6.1 Background</li>
+                    <li>4.6.2 Borders</li>
+                    <li>4.6.3 Margins and Padding</li>
+                    <li>4.6.4 Box Dimensions</li>
+                </ul>
+                <li>4.7 CSS Text Styling</li>
+                <ul>
+                    <li>4.7.1 Font Family</li>
+                    <li>4.7.2 Font Sizes</li>
+                    <li>4.7.3 Paragraph Properties</li>
+                </ul>
+            </ul>
         </section>
+        <section>
+        <h3>Review Questions</h3>
+        <p class="question">What are the main benefits of using CSS?</p>
+        <ul>
+            <li>Improved control over formatting</li>
+            <li>Improved site maintainability</li>
+            <li>Improved accessibility</li>
+            <li>Improved page-download speed.</li>
+            <li>Improved output flexibility</li>
+        </ul>
+        <p class="question">Compare the approach the W3C has used with CSS3 in comparison to CSS2.1</p>
+        <p>Even though work began over a decade ago, an updated version of the Level 2 Recommendation, CSS2.1, did not become an official Recommendation unitl June 2011.</p>
+        <p>To make CCS3 more manageable for both browser manufacgturers and web designers, the W3C has subdivided it into a variety of different CSS3 modules. So far the following CSS3 modules have made it to official W3C Recommendations: CSS Selectors, CSS Namespaces, CSS Media QUeries, CSS Color, and CSS Style Attributes.</p>
+        <p class="question">What are the different parts of a CSS style rule?</p>
+        <p>A rule consists of a selector that identifies the HTML elementor elements taht will be affected, followed by a series of property:value pairs (each pari is also called a declarations</p>
+        <p class="question">What is the difference between a relative and an absolute measure unit in CSS? Why are relative units preferred over absolute units in CSS?</p>
+        <p>A measure is always realtive to another value. It is preferred to keep proportion to another elements</p>
+        <p class="question">What is an element selector and a grouped element selector? Provide an example of each?</p>
+        <p></p>
+        <p class="question">What are class selectors? What are id selectors? Briefly discuss why you would use one over the other</p>
+        <p></p>
+        <p class="question">What are contextual selectors? Identify the four different contextual selectors.</p>
+        <p></p>
+        <p class="question">What are pseudo-class selectors? What are they commonly used for?</p>
+        <p></p>
+        <p class="question">What does cascade in CSS refer to?</p>
+        <p></p>
+        <p class="question">What are the three cascade principles used by browsers when style rules conflict? Briefly describe each.</p>
+        <p></p>
+        <p class="question">Illustrate the CSS box model. Be sure to label each of the components of the box.</p>
+        <p></p>
+        <p class="question">Wha is a web font stack? Why are they necessary?</p>
+        <p></p>
+    </section>
+    <section>
+        <h3>Key Terms</h3>
+        <details>
+            <summary>absolutte units</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>author-created style sheets</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>box model</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>browser style sheets</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>cascade</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>class selector</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>collapsing margins</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>combinators</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>contextual selector</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>CSS</summary>
+            <p>HTML should not describe the formatting or presentation of documents. Instead that presentation task is best performed using Cascasing Style Sheets (CSS)>=.</p>
+        </details>
+        <details>
+            <summary>CSS3 modules</summary>
+            <p>To make CCS3 more manageable for both browser manufacgturers and web designers, the W3C has subdivided it into a variety of different CSS3 modules. So far the following CSS3 modules have made it to official W3C Recommendations: CSS Selectors, CSS Namespaces, CSS Media QUeries, CSS Color, and CSS Style Attributes.</p>
+        </details>
+        <details>
+            <summary>declaration</summary>
+            <p>property: value pairs (each pair is also called a declaration)</p>
+        </details>
+        <details>
+            <summary>declaration block</summary>
+            <p>The series of declarations is also called the declaration block.</p>
+        </details>
+        <details>
+            <summary>element box</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>element selectors</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>em units</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>embedded style sheets</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>external style sheets</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>generic font</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>grouped selector</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>id selector</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>inheritance</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>inline styles</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>internal styles</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>location</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>margin</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>padding</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>percentages</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>presentation</summary>
+            <p>Another common way to describe CSS's function is to say that CSS is used to define the presentation of HTML documents. With CSS, we can assign font properties, colors, sizes, borders, background images, and even position elements on the page.</p>
+        </details>
+        <details>
+            <summary>property: value pair</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>pseudo-class selector</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>pseudo-element selector</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>relative units</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>rem units</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>responsive design</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>selector</summary>
+            <p>Every CSS rule begins with a selector. The selector identifies which element or elements in the HTML document will be affected by the declarations in the rule.</p>
+        </details>
+        <details>
+            <summary>specificity</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>style rules</summary>
+            <p>A CSS document consists of one or more style rules.</p>
+        </details>
+        <details>
+            <summary>TRouBLe</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>universal element selector</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>user style sheets</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>vendor prefixes</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>web font stack</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>x-height</summary>
+            <p></p>
+        </details>
+    </section>
     </main>
     <footer>
 

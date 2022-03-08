@@ -8,3 +8,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: blue;
 }
+summary {
+    color: black;
+    font-weight: bold;
+}
