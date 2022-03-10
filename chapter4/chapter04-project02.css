@@ -1,0 +1,40 @@
+body {
+    background-color: #ECEFF1;
+}
+h2 {
+    background-image: url(../images/pattern.png);
+    padding: 20px;
+}
+
+a[href^="mailto"] {
+    background: url(images/email.png) no-repeat 0 3px;
+    padding-left: 1em;
+}
+a[href^="tel"] {
+    background: url(images/call.png) no-repeat 0 3px;
+    padding-left: 1em;
+}
+nav li {
+    display: inline-block;
+    padding: 10px;
+    color: cyan;
+}
+nav ul {
+    background-color: #607D8B;
+}
+h1{
+    background-color: #263238;
+    padding: 20px;
+}
+figure {
+    text-align: center;
+}
+#crm {
+    color:orange;
+}
+#admin {
+    color: white;
+}
+footer {
+    background-color: #263238;
+}
