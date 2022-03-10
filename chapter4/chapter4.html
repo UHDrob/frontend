@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/chapter4.css">
     <link rel="stylesheet" href="../css/chapter.css">
     <title>Chapter 4</title>
 </head>
@@ -12,11 +11,12 @@
     <header>
         <h1>Chapter 4</h1>
         <h2>Introduction to CSS</h2>
+        <a href="../index.html">Back to Main</a>
     </header>
     <main>
         <section>
             <h3>Objectives</h3>
-            <ul>
+            <ul class="objectives">
                 <li>4.1 What is CSS</li>
                 <ul>
                     <li>4.1.1 Benefits of CSS</li>
@@ -25,6 +25,7 @@
                 </ul>
                 <li>4.2 CSS Syntax</li>
                 <ul>
+                    Selector { property: value;}
                     <li>4.2.1 Selectors</li>
                     <li>4.2.2 Properties</li>
                     <li>4.2.3 Values</li>
@@ -53,6 +54,8 @@
                 </li>
                 <li>4.6 The Box Model</li>
                 <ul>
+                    <li>Margin - Border - Padding(include background-color)</li>
+                    <li>Content Area (included Height and Width)</li>
                     <li>4.6.1 Background</li>
                     <li>4.6.2 Borders</li>
                     <li>4.6.3 Margins and Padding</li>
@@ -69,7 +72,7 @@
         <section>
         <h3>Review Questions</h3>
         <p class="question">What are the main benefits of using CSS?</p>
-        <ul>
+        <ul class="answer">
             <li>Improved control over formatting</li>
             <li>Improved site maintainability</li>
             <li>Improved accessibility</li>
@@ -77,8 +80,12 @@
             <li>Improved output flexibility</li>
         </ul>
         <p class="question">Compare the approach the W3C has used with CSS3 in comparison to CSS2.1</p>
-        <p>Even though work began over a decade ago, an updated version of the Level 2 Recommendation, CSS2.1, did not become an official Recommendation unitl June 2011.</p>
-        <p>To make CCS3 more manageable for both browser manufacgturers and web designers, the W3C has subdivided it into a variety of different CSS3 modules. So far the following CSS3 modules have made it to official W3C Recommendations: CSS Selectors, CSS Namespaces, CSS Media QUeries, CSS Color, and CSS Style Attributes.</p>
+        <div class="answer
+        ">
+            <p >Even though work began over a decade ago, an updated version of the Level 2 Recommendation, CSS2.1, did not become an official Recommendation unitl June 2011.</p>
+            <p>To make CCS3 more manageable for both browser manufacgturers and web designers, the W3C has subdivided it into a variety of different CSS3 modules. So far the following CSS3 modules have made it to official W3C Recommendations: CSS Selectors, CSS Namespaces, CSS Media QUeries, CSS Color, and CSS Style Attributes.</p>
+        </div>
+
         <p class="question">What are the different parts of a CSS style rule?</p>
         <p>A rule consists of a selector that identifies the HTML elementor elements taht will be affected, followed by a series of property:value pairs (each pari is also called a declarations</p>
         <p class="question">What is the difference between a relative and an absolute measure unit in CSS? Why are relative units preferred over absolute units in CSS?</p>
