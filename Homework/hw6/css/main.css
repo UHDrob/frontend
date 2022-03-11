@@ -1,0 +1,81 @@
+
+body {
+    background-image: url("../images/stucco/stucco.png");
+    padding: 0 20px;
+}
+
+h1 {
+    margin-block: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav[role="main"] ul {
+    background-color: #333;
+}
+nav[role="sub"] ul {
+    background-color: aliceblue;
+    border-style: solid;
+    color: lightgreen;
+}
+
+nav[role="main"] ul li {
+    float: right;
+}
+nav[role="sub"] ul li {
+    float: left;
+}
+
+nav ul li a {
+    display:block;
+    text-align: center;
+    padding: 14px 30px;
+}
+
+
+nav[role="main"] ul li a {
+    color: white;
+}
+nav[role="sub"] ul li a {
+    display: block;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+}
+.row:after {
+    content: "";
+    display:table;
+    clear:both;
+}
+
+.pics {
+    background-color: white;
+}
+
+.img-container {
+    float:left;
+    padding: 5px;
+    margin-inline-end: 20px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding:  5px;
+}
