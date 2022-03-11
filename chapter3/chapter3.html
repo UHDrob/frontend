@@ -13,12 +13,30 @@
         <h1>Chapter 3</h1>
         <h2>Introduction to HTML</h2>
         <a href="../index.html">Back to Main</a>
+
         <nav>
-            <ol>
-                <li>Project <a href="project1.html">One</a></li>
-                <li>Project <a href="project2.html">Two</a></li>
+            <ul>
+                <li>
+                    <a href="../chapter4/chapter4.html">Chapter 4</a>
+                </li>
+                <li>
+                    <a href="../chapter3/chapter3.html">Chapter 3</a>
+                </li>
+                <li>
+                    <a href="../chapter2/chapter2.html">Chapter 2</a>
+                </li>
+                <li>
+                    <a href="../chapter1/chapter1.html">Chapter 1</a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <nav>
+            <ul>
                 <li>Project <a href="project3.html">Three</a></li>
-            </ol>
+                <li>Project <a href="project2.html">Two</a></li>
+                <li>Project <a href="project1.html">One</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -26,33 +44,75 @@
             <h3>Objectives</h3>
             <ul>
                 <li>3.1 What is HTML and Where did it come from?</li>
+                <ul class="term">
+                    <li>World Wide Web Consortium</li>
+                    <li>W3C</li>
+                    <li>markup language</li>
+                    <li>markup</li>
+                    <li>tags</li>
+                    <li>recomendations</li>
+                </ul>
                 <ul>
                     <li>3.1.1 XHTML</li>
-                    <ul>
-                        <li>There must be asingle root element</li>
-                        <li>Elements names are composed of any of the valid characters (most puctuaction symbols and spaces are not allowed) in XML.</li>
-                        <li>Elements names can't start with a number</li>
-                        <li>Element and attribute names are case sensitive</li>
-                        <li>Attributes must always be within quotes</li>
-                        <li>All elements must havea closing element (or be self-closing)</li>
+                    <ul class="term">
+                        <li>syntax errors</li>
+                        <li>XHTML 1.0 strict</li>
+                        <li>XHTML 1.0 Transitional</li>
+                        <li>schemas</li>
+                        <li>HTML validators</li>
                     </ul>
                     <li>3.1.2 HMTL 5</li>
+                    <ul class="term">
+                        <li>WHATWG</li>
+                    </ul>
                 </ul>
                 <li>3.2 HTML Syntax</li>
                 <ul>
                     <li>3.2.1 Elements and Attributes</li>
+                    <ul class="term">
+                        <li>HTML attribute</li>
+                        <li>empty element?</li>
+                    </ul>
                     <li>3.2.2 Nesting HTML Elements</li>
+                    <ul class="term">
+                        <li>descendants</li>
+                        <li>ancestors</li>
+                        <li>cascading style sheets</li>
+                        <li>Document Object Model DOM</li>
+                    </ul>
                 </ul>
                 <li>3.3 Semantic Markup</li>
+                <ul class="term">
+                    <li>semantic HTML</li>
+                    <li>maintainabiltiy</li>
+                    <li>performance</li>
+                    <li>accessibility</li>
+                    <li>Search engine optimization SEO</li>
+                </ul>
                 <li>3.4 Structure of HTML Documents</li>
                 <ul>
                     <li>3.4.1 Doctype</li>
+                    <ul class="term">
+                        <li>Document Type Definition</li>
+                        <li>standards mode</li>
+                        <li>quirks mode</li>
+                        <li>root element</li>
+                        <li>head</li>
+                        <li>body</li>
+                        <li>UTF-8</li>
+                    </ul>
                     <li>3.4.2 Head and Body</li>
                 </ul>
                 <li>3.5 Wuick Tour of HTML Elements</li>
                 <ul>
                     <li>3.5.1 Headings</li>
+                    <ul class="term">
+                        <li>document outline</li>
+                    </ul>
                     <li>3.5.2 Paragraphs and Divisions</li>
+                    <ul class="term">
+                        <li>inline HTML elements</li>
+                    </ul>
                     <li>3.5.3 Links</li>
                     <ul>
                         <li>&lt;a href="http://www.google.com&gt;Google&lt;/a &gt;</li>
@@ -62,7 +122,60 @@
                         <li>&lt;a name="top" &gt;</li>
                     </ul>
                     <li>3.5.4 URL Relative Referencing</li>
+                    <ul class="term">
+                        <li>relative referencing</li>
+                        <li>absolute reference</li>
+                        <li>directory (folder)</li>
+                        <li>pathname</li>
+                    </ul>
                     <li>3.5.5 Inline Text Elements</li>
+                    <table class="term">
+                        <caption>Common Text-Level Semantic Elements</caption>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>&lt; a &gt;</td>
+                            <td>Anchor used for hyperlinks</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; abbr &gt;</td>
+                            <td>An abbreviation</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; br &gt;</td>
+                            <td>line break</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; code &gt;</td>
+                            <td>Used for displaying code, such as markup or programming code</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; em &gt;</td>
+                            <td>Emphasis</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; mark &gt;</td>
+                            <td>For displaying highlighted text</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; small &gt;</td>
+                            <td>For displaying the fine-print such as copyright or legal notices</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; span &gt;</td>
+                            <td>The inline equivalent of the <div> element. It is generally used to mark text that will receive special formatting using CSS</div></td>
+                        </tr>
+                        <tr>
+                            <td>&lt; strong &gt;</td>
+                            <td>For content that is strongly important</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; time &gt;</td>
+                            <td>For displaying time and date data</td>
+                        </tr>
+                    </table>
                     <ul>
                         <li>a      anchor used for hyperlinks</li>
                         <li>abbr   an abbreviation</li>
@@ -70,7 +183,16 @@
                     </ul>
                     <li>3.5.6 Images</li>
                     <li>3.5.7 Character Entities</li>
+                    <ul class="term">
+                        <li>character entity</li>
+                    </ul>
                     <li>3.5.8 LIsts</li>
+                    <ul>
+                        <li>unordered lists</li>
+                        <li>ordered lists</li>
+                        <li>description lists</li>
+                    </ul>
+
                 </ul>
                 <li>3.6 HTML5 Semantic Structure Elements</li>
                 <ul>

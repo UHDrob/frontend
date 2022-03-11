@@ -11,17 +11,36 @@
 .term {
     color:green;
 }
+
+nav li {
+    display: inline;
+    list-style: ;
+    float:right;
+}
+nav a {
+    text-decoration: none;
+    text-align:center;
+    display: block;
+    background-color: green;
+    color: white;
+    padding: 12px;
+}
+
 tr>td {
-    color:lightgreen;
+    color:lightred;
 }
 
 a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color:red;
+    background-color: yellow;
+    color:black;
 }
 a:active {
     background-color: yellow;    
+}
+table, caption {
+    border: 2px solid blue;
 }
 
 ul {

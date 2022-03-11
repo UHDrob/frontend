@@ -3,7 +3,8 @@ body{
     padding: 25px;
 }
 header {
-    background-color: cyan;;
+    background-color: cyan;
+    ;
 }
 #class {
     font-size: 50px;
