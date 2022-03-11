@@ -8,6 +8,12 @@
 .answer {
     background-color: cyan;;
 }
+.term {
+    color:green;
+}
+tr>td {
+    color:lightgreen;
+}
 
 a:hover {
     text-decoration: underline;
