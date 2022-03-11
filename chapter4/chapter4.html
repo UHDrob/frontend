@@ -20,51 +20,603 @@
                 <li>4.1 What is CSS</li>
                 <ul>
                     <li>4.1.1 Benefits of CSS</li>
+                    <ul class="term">
+                        <li >Cascading Style Sheets (CSS)</li>
+                        <li >presentation</li>
+                        <li>responsive design</li>
+                    </ul>
                     <li>4.1.2 CSS versions</li>
+                    <ul class="term">
+                        <li>CSS3 modules</li>
+                    </ul>
                     <li>4.1.3 Browser Adoption</li>
                 </ul>
                 <li>4.2 CSS Syntax</li>
-                <ul>
-                    Selector { property: value;}
+                <ul class="term">
+                    <li>style rules</li>
+                    <li>selector</li>
+                    <li>property:value pairs</li>
+                    <li>declaration</li>
+                    <li>Selector { property: value;}</li>
+                    <li>declaration block</li>
+                </ul>
+                <ul> 
                     <li>4.2.1 Selectors</li>
+                    <ul class="term">
+                        <li>selector</li>
+                    </ul>
                     <li>4.2.2 Properties</li>
+                    <table class="term">
+                        <caption>Common CSS Properties</caption>
+                        <tr>
+                            <th>Property Type</th>
+                            <th>Property</th>
+                        </tr>
+                        <tr>
+                            <td>FONTS</td>
+                            <td>font</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>font-family</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>font-size</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>font-style</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>font-weight</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>@font-face</td>
+                        </tr>
+                        <tr>
+                            <td>TEXT</td>
+                            <td>letter-spacing</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>line-height</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>text-align</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>text-decorations*</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>text-indent</td>
+                        </tr>
+                        <tr>
+                            <td>COLOR AND BACKGROUND</td>
+                            <td>background</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>background-color</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>background-image</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>background-position</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>background-repeat</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>box-shadow</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>color</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>opacity</td>
+                        </tr>
+                        <tr>
+                            <td>BORDERS</td>
+                            <td>border*</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>border-color</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>border-width</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>border-style</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>border-top, border-left, etc</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>border-image*</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>border-radius</td>
+                        </tr>
+                        <tr>
+                            <td>SPACING</td>
+                            <td>padding</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>padding-bottom, padding-left, ...</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>margin</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>margin-bottom, margin-left, ...</td>
+                        </tr>
+                        <tr>
+                            <td>SIZING</td>
+                            <td>height</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>max-height</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>max-width</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>min-height</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>min-width</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>width</td>
+                        </tr>
+                        <tr>
+                            <td>LAYOUT</td>
+                            <td>bottom, left, right, top</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>clear</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>display</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>float</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>overflow</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>position</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>visibility</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>z-index</td>
+                        </tr>
+                        <tr>
+                            <td>LISTS</td>
+                            <td>list-style*</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>list-style-image</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>list-style-type</td>
+                        </tr>
+                        <tr>
+                            <td>EFFECTS</td>
+                            <td>animation*</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>filter</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>perspective</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>transform*</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>transition*</td>
+                        </tr>
+                    </table>
                     <li>4.2.3 Values</li>
+                    <ul class="term">
+                        <li>relative units</li>
+                        <li>absolute units</li>
+                    </ul>
                 </ul>
                 <li>4.3 Location of Styles</li>
                 <ul>
                     <li>4.3.1 Inline Styles</li>
+                    <ul class="term">
+                        <li>inline styles</li>
+                    </ul>
                     <li>4.3.2 Embedded Style Sheet</li>
+                    <ul class="term">
+                        <li>Embedded sytle sheets (internal styles)</li>
+                    </ul>
                     <li>4.3.3 External Style Sheet</li>
+                    <ul class="term">
+                        <li>External style sheets</li>
+                    </ul>
                 </ul>
                 <li>4.4 Selectors</li>
                 <ul>
                     <li>4.4.1 Element Selectors</li>
+                    <ul class="term">
+                        <li>element selectors</li>
+                        <li>universal element selector (*)</li>
+                        <li>grouped selector</li>
+                    </ul>
                     <li>4.4.2 Class Selectors</li>
+                    <ul class="term">
+                        <li>class selector</li>
+                    </ul>
                     <li>4.4.3 Id Selectors</li>
+                    <ul class="term">
+                        <li>id selector</li>
+                    </ul>
                     <li>4.4.4 Attribute Selectors</li>
+                    <ul class="term">
+                        <li>attribute selector</li>
+                    </ul>
+                    <table class="term">
+                        <caption>Attribute Selectors</caption>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Matches</th>
+                        </tr>
+                        <tr>
+                            <td>[]</td>
+                            <td>A specific attribute</td>
+                        </tr>
+                        <tr>
+                            <td>[=]</td>
+                            <td>A specific attribute with a specific value</td>
+                        </tr>
+                        <tr>
+                            <td>[~=]</td>
+                            <td>A specific attribute whose value matches at least one of the words in a space-delimited list of words.</td>
+                        </tr>
+                        <tr>
+                            <td>[^=]</td>
+                            <td>A specific attribute whose value 
+                                begins with a specified value.</td>
+                        </tr>
+                        <tr>
+                            <td>[*=]</td>
+                            <td>A specific attribute whose value contains a substrings.</td>
+                        </tr>
+                        <tr>
+                            <td>[$=]</td>
+                            <td>A specific attributes whose value ends with a specified value.</td>
+                        </tr>
+                    </table>
                     <li>4.4.5 Pseude-Element and Pseudo-Class Selectors</li>
+                    <ul class="term">
+                        <li>pseudo-element selector</li>
+                        <li>pseudo-class selector</li>
+                    </ul>
+                    <table class="term">
+                        <tr>
+                            <th>Selector</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>a:link</td>
+                            <td>Select links that have not been visited.</td>
+                        </tr>
+                        <tr>
+                            <td>a:visited</td>
+                            <td>Select links that have been visited.</td>
+                        </tr>
+                        <tr>
+                            <td>:focus</td>
+                            <td>Select elements (such as text boxes or list boxes) that have the input focus.</td>
+                        </tr>
+                        <tr>
+                            <td>:hover</td>
+                            <td>Select elements that the mouse pointer is currently above</td>
+                        </tr>
+                        <tr>
+                            <td>:active</td>
+                            <td>Selects an element that is being activated by the user.</td>
+                        </tr>
+                        <tr>
+                            <td>:checked</td>
+                            <td>Select a form element that is currently checked.</td>
+                        </tr>
+                        <tr>
+                            <td>:first-child</td>
+                            <td>Selects an element that is the first child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>first-letter</td>
+                            <td>Selects the first letter of an element. Useful for element adding drop-caps to a paragraph</td>
+                        </tr>
+                        <tr>
+                            <td>:first-line</td>
+                            <td>Selects the first line of an element.</td>
+                        </tr>
+                    </table>
                     <li>4.4.6 Contextual Selectors</li>
+                    <ul class="term">
+                        <li>contextual selector(combinators)</li>
+                        <li>descendant selector</li>
+                        <table>
+                            <tr>
+                                <th>Selector</th>
+                                <th>Example</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>Descendant</td>
+                                <td>div p</td>
+                                <td>A specified element that is contained somewhere within another specified element.</td>
+                            </tr>
+                            <tr>
+                                <td>Child</td>
+                                <td>div>h2</td>
+                                <td>A specified element that is a direct child of the specific element.</td>
+                            </tr>
+                            <tr>
+                                <td>Adjacent sibling</td>
+                                <td>h3+p</td>
+                                <td>A specified element that is the next sibling</td>
+                            </tr>
+                            <tr>
+                                <td>General sibling</td>
+                                <td>h3~p</td>
+                                <td>A specified element that shares the same parent as the specied element</td>
+                            </tr>
+                        </table>
+                    </ul>
                 </ul>
                 <li>4.5 The Cascade: How Styles Interact
+                    <ul class="term">
+                        <li>cascade</li>
+                    </ul>
                     <ul>
                         <li>4.5.1 Inheritance</li>
+                        <ul class="term">
+                            <li>inheritance</li>
+                        </ul>
                         <li>4.5.2 Specificity</li>
+                        <ul class="term">
+                            <li>specificity</li>
+                        </ul>
                         <li>4.5.3 Location</li>
+                        <ul class="term">
+                            <li>location</li>
+                        </ul>
                     </ul>
                 </li>
                 <li>4.6 The Box Model</li>
+                <ul class="term">
+                    <li>element box</li>
+                </ul>
                 <ul>
-                    <li>Margin - Border - Padding(include background-color)</li>
+                    <li>Margin -> Border -> Padding(include background-color)</li>
                     <li>Content Area (included Height and Width)</li>
                     <li>4.6.1 Background</li>
+                    <table class="term">
+                        <caption>Common background properties</caption>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>background</td>
+                            <td>A combined shorthand property that allows you to set multiple backgrounds values in one property</td>
+                        </tr>
+                        <tr>
+                            <td>background-attachment</td>
+                            <td>Specifies whether the background image scrolls with the document(default) or remains fixed. [fixed, scroll]</td>
+                        </tr>
+                        <tr>
+                            <td>background-color</td>
+                            <td>Sets the background color of the element</td>
+                        </tr>
+                        <tr>
+                            <td>background-image</td>
+                            <td>Specifies the background image for an element.</td>
+                        </tr>
+                        <tr>
+                            <td>background-position</td>
+                            <td>Specifies where on the element the background image will be placed. [bottom, center, left, right, 300px 50px]</td>
+                        </tr>
+                        <tr>
+                            <td>background-repeat</td>
+                            <td>Determines whther the background image will be repeated [repeat, repeat-x, repat-y, no-repeat]</td>
+                        </tr>
+                        <tr>
+                            <td>background-size</td>
+                            <td>This property lets you modify the size of the background image</td>
+                        </tr>
+                    </table>
                     <li>4.6.2 Borders</li>
+                    <table class="term">
+                        <caption>Border Properties</caption>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>border</td>
+                            <td>A combined shorthand property that allows you to set the style, width, and color of a border in one property [border-style border-width border-color]</td>
+                        </tr>
+                        <tr>
+                            <td>border-style</td>
+                            <td>Specifies the line type of the border [solid, dotted, dashed, double,groove, ridge, inset, and outset</td>
+                        </tr>
+                        <tr>
+                            <td>border-width</td>
+                            <td>The widht of the border in a unit (but not in percents)</td>
+                        </tr>
+                        <tr>
+                            <td>border-color</td>
+                            <td>The color of the border in acolor unit.</td>
+                        </tr>
+                        <tr>
+                            <td>border-radius</td>
+                            <td>The radius of a roudend corner.</td>
+                        </tr>
+                        <tr>
+                            <td>border-image</td>
+                            <td>The URL of an image to use as a border</td>
+                        </tr>
+                    </table>
                     <li>4.6.3 Margins and Padding</li>
+                    <ul class="term">
+                        <li>padding</li>
+                    </ul>
                     <li>4.6.4 Box Dimensions</li>
+                    <ul class="term">
+                        <li>vendor prefixes</li>
+                    </ul>
                 </ul>
                 <li>4.7 CSS Text Styling</li>
+                <table class="term">
+                    <caption>Font Properties</caption>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>font</td>
+                        <td>A combined shorthand property that allows you to set the family, style, size, variant, and weigth in one property (minumum font size and font family)</td>
+                    </tr>
+                    <tr>
+                        <td>font-family</td>
+                        <td>Specifies the typeface/font (or generic font family) to use</td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>The size of the font in one of the measurement units.</td>
+                    </tr>
+                    <tr>
+                        <td>font-style</td>
+                        <td>specifies whether italic, oblique, or normal</td>
+                    </tr>
+                    <tr>
+                        <td>font-variant</td>
+                        <td>Specifies either small-caps text or none</td>
+                    </tr>
+                    <tr>
+                        <td>font-weight</td>
+                        <td>Specifies either normal, bold, bolder, ligher, or a value between 100 and 900 in multiples of 100, where larger number represents weightier(i.e. bolder) text</td>
+                    </tr>
+                </table>
                 <ul>
                     <li>4.7.1 Font Family</li>
+                    <ul class="term">
+                        <li>web font stack</li>
+                        <li>generic font</li>
+                        <li>x-height</li>
+                    </ul>
                     <li>4.7.2 Font Sizes</li>
+                    <ul class="term">
+                        <li>em units</li>
+                        <li>percentages</li>
+                        <li>rem</li>
+                    </ul>
+                    <table class="term">
+                        <caption>Text Properties</caption>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>letter-spacing</td>
+                            <td>Adjust the space between letters. Can be the value normal or a length unit</td>
+                        </tr>
+                        <tr>
+                            <td>line-height</td>
+                            <td>Specifies the space between baselines</td>
+                        </tr>
+                        <tr>
+                            <td>list-style-image</td>
+                            <td>Specifies the URL of an image to use as the marker for unordered lists. Set to none to remove markers</td>
+                        </tr>
+                        <tr>
+                            <td>list-style-type</td>
+                            <td>Selects the market type to use for ordered and unordered lists. Nonte to remove markers</td>
+                        </tr>
+                        <tr>
+                            <td>text-align</td>
+                            <td>Aligns the text horizontally in a container element in a similar way as a word processor. [left, right, center, justify]</td>
+                        </tr>
+                        <tr>
+                            <td>text-decoration</td>
+                            <td>Specifies whether the text will have lines below, through, or over it [none, underline, overline,line-through, blink]</td>
+                        </tr>
+                        <tr>
+                            <td>text-direction</td>
+                            <td>Specifies the direction of the text [ltr, rtl]</td>
+                        </tr>
+                        <tr>
+                            <td>text-indent</td>
+                            <td>Indents the first line of a paragraph by a specific amount</td>
+                        </tr>
+                        <tr>
+                            <td>text-shadow</td>
+                            <td>A new CSS3 property that can be used to add a drop shadow to a text</td>
+                        </tr>
+                        <tr>
+                            <td>text-transform</td>
+                            <td>Changes the capitalization of text. [none, capitalize, lowercase, uppercase]</td>
+                        </tr>
+                        <tr>
+                            <td>vertical-align</td>
+                            <td>Aligns the text vertically in a container element [top, bottom, middle]</td>
+                        </tr>
+                        <tr>
+                            <td>word-spacing</td>
+                            <td>Adjust the space between words. can be the value normal or a length unit</td>
+                        </tr>
+                    </table>
                     <li>4.7.3 Paragraph Properties</li>
                 </ul>
             </ul>
