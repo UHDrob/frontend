@@ -75,3 +75,16 @@ button {
     background-color: orangered;
     color:cyan;
 }
+
+form {
+    padding: 10px 60px;
+}
+label {
+    font-weight: bold;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding:10px 30px;
+    font-size: smaller;
+}

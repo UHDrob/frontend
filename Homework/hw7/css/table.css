@@ -75,3 +75,6 @@ button {
     background-color: orangered;
     color:cyan;
 }
+label {
+    font-weight: bold;
+}
