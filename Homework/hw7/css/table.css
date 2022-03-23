@@ -1,0 +1,77 @@
+body {
+    background-color: lightgray;
+    padding: 5%;
+}
+
+.maintitle {
+    background-color: rgb(18, 53, 53);
+    color: white;
+    margin: 0px;
+    line-height: 2;
+    font-family: sans-serif;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.title {
+    color: white;
+    background-color: rgb(110, 116, 110);
+    text-align: center;
+    margin: 10px 50px;
+    line-height: 2;
+    font-family: sans-serif;
+}
+
+table {
+    margin: 0 50px 5px 50px;
+    text-align: left;
+    
+}
+
+th {
+    padding-top: 20px;
+    padding-left: 17px;;
+    color: gray;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px 20px;
+    font-family: sans-serif;
+    color: rgb(119, 97, 97);
+    text-align: left;
+    font-size: 13px;
+}
+
+div {
+    margin-right: 100px;
+    
+}
+
+button {
+    border: 0;
+    border-radius: 10%;
+}
+
+.data {
+    background-color:  white;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+#shipped {
+    background-color: rgb(34, 192, 34);
+    color:cyan;
+}
+#pending {
+    background-color: rgb(44, 175, 226);
+    color:cyan;
+}
+#processing {
+    background-color: orangered;
+    color:cyan;
+}
