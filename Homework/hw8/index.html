@@ -14,8 +14,10 @@
         
         <div class="data">
             <p class="maintitle">Data</p>
-            <p class="title">Orders</p>
+        
             <table>
+                <caption >Orders</caption>
+
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -26,6 +28,7 @@
                         <th>Status</th>
                     </tr>
                 </thead>
+                
                 <tbody>
                     <tr>
                         <td>123</td>
@@ -99,22 +102,35 @@
     <br><br>
         <div class="data">
             <p class="maintitle">Revise</p>
-            <form action="">
+            <form action="http://www.randyconnolly.com/tests/process.php" method="get">
 
-                <label for="text" >Customer</label> <br>
-                <input type="text">  <br>
+                <label for="text" id="customer" >Customer</label> <br>
+                <input type="text" placeholder="Enter name" name="customer">  <br> <br>
+
                 <label for="text">Country</label> <br>
-                <input type="text">  <br>
+                    <select id="country" name="country" value="Choose a country">
+                        <option value="choose" selected>Choose a country</option>
+                        <option value="england">England</option>
+                        <option value="french">French</option>
+                        <option value="germany">Germany</option>
+                    </select>
+                <br><br>
+
                 <label for="text">Status</label> <br>
-                <input type="checkbox">
-                <br>
-                <label for="text">Order Date</label> <br>
-                <input type="date">  <br> <br>
-                <button>Submit</button>
-                <button>Clear Form </button>
-                <br>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
+                  <input type="radio" id="pending" name="status" value="Pending" checked>
+                  <label for="html" >Pending</label>
+                  <input type="radio" id="css" name="status" value="processing">
+                  <label for="processing">Processing</label>
+                  <input type="radio" id="javascript" name="status" value="Shipped">
+                  <label for="shipped">Shipped</label>
+
+
+                <br><br>
+                <label for="text" id="orderdate">Order Date</label> <br>
+                <input type="date" name="orderdate">  <br> <br>
+
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Clear Form" class="button">
 
             </form>
 

@@ -15,11 +15,11 @@ body {
     font-weight: bold;
 }
 
-.title {
+caption {
     color: white;
     background-color: rgb(110, 116, 110);
     text-align: center;
-    margin: 10px 50px;
+    margin: 10px;
     line-height: 2;
     font-family: sans-serif;
 }
@@ -82,9 +82,18 @@ form {
 label {
     font-weight: bold;
 }
-button {
+.button {
     background-color: blue;
     color: white;
-    padding:10px 30px;
+    padding:10px 20px;
     font-size: smaller;
+}
+.button:hover {
+    background-color: yellow;
+    color: black;
+}
+input [type="text"] {
+    margin: 4px;
+    border-color: gray;
+    padding: 10px;
 }
