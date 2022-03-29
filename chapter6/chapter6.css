@@ -1,0 +1,15 @@
+.gradient1 {
+    background-image: linear-gradient(green, white);
+}
+.gradient2 {
+    background-image: linear-gradient(to top left, white, blue);
+}
+.gradient3 {
+    background-image: linear-gradient(90deg, green 50%, orange, blue);
+}
+.gradient4 {
+    background-image: repeating-linear-gradient(135deg, black 0, black .75em, green 0, green 2em);
+}
+.gradient5 {
+    background-image: radial-gradient(circle, yellow, red);
+}
