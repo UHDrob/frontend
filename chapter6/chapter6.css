@@ -13,3 +13,16 @@
 .gradient5 {
     background-image: radial-gradient(circle, yellow, red);
 }
+.rectangleA {
+    background-color: rgb(0,255,0);
+}
+.rectangleB {
+    background-color: green;
+    opacity: 0.75;
+}
+.rectangleC {
+    background-color: rgb( 0, 255, 0, 0.50);
+}
+.rectangleD {
+    background-color: hsla(120, 100%, 50%, 0.25);
+}
