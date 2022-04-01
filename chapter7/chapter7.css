@@ -1,0 +1,12 @@
+h1 {
+    background-color: blue;
+    color: white;
+    padding: 10px 0;
+}
+nav {
+    background-color: cyan;
+    width: 200px;
+}
+nav ul li {
+    list-style-type: none;
+}
