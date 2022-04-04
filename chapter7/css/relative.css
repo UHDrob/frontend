@@ -1,0 +1,10 @@
+figure {
+    border: 1pt solit #A8A8A8;
+    background-color: #ededdd;
+    padding: 5px;
+    width: 150px;
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
