@@ -1,0 +1,39 @@
+html, body, header, footer, aside, div, p, h1, h2, h3, li, ul
+{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif; 
+  font-size: 1em;
+}
+
+h1 { font-size: 1.5em; margin: 0.25em;}
+h2 { font-size: 1.35em; margin: 0.25em;}
+h3 { font-size: 1.15em; margin-top: 0.4em}
+p { margin: 0.25em 0; }
+a:link, a:visited { color: #090388; }
+
+li { list-style-type: none; margin: 0.25em 0; }
+
+header {
+  color: white;
+  background-color: #303f9f;
+  height: 3em;
+    padding: 0.5em;
+}
+div#main {
+    padding: 0.5em;
+    margin-left: 13em
+}
+nav {
+  color: #333;
+  width: 12em;
+  background-color: #e8eaf6;
+  padding: 0.5em;  
+  float: left;
+}
+footer {
+  color: white;
+  background-color: #1A237E;
+  height: 3em;
+  padding: 0.5em;
+}
