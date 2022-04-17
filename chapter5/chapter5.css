@@ -1,9 +1,4 @@
 table {
-    width:400px;
-    outline-style: solid;
-    outline-width: 5px;
-}
-th {
-    colspan:2;
-    rowspan:2;
+    width:600px;
+
 }
