@@ -9,28 +9,60 @@
 </head>
 <body>
     <header>
-        <h1>Forms</h1>
+        <h1>Introducing Forms</h1>
     </header>
     <body>
-        <h2>Introducing Forms</h2>
+        <h2>Form Structure</h2>
         <section>
-            <form action="" method="post">
+            <form action="http://examples.funwebdev.com/process.php" method="get">
                 <fieldset>
                     <legend>Details</legend>
                     <p>
                         <label for="name">Title:</label>
-                        <input type="text" name="title">
+                        <input type="text" name="title" placeholder="Place name">
                     </p>
                     <p>
-                        <label for="">Country</label>
-                        <select name="where" id="">
-                            <option value="0">Choose a country</option>
+                        <label for="">Continent</label> <br>
+                        <input type="radio" name="where" value="1" checked>North America <br>
+                        <input type="radio" name="where" value="2">South America <br>
+                        <input type="radio" name="where" value="3">Asia <br>
+                    </p>
+                    <p>
+                        <label for="">Search Country</label>
+                        <select name="where" id="where">
                             <option value="1">Canada</option>
                             <option value="2">Finland</option>
-                            <option value="3">United States</option>
+                            <option value="3" selected>United States</option>
                         </select>
                     </p>
+                    <p>
+                        <label for="cities">Cities</label>
+                        <select name="text" id="cities" size="3">
+                            <optgroup label="North America">
+                                <option value="1">Calgary</option>
+                                <option value="2">Los Angeles</option>
+                                <option value="3" selected>Houston</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="4">London</option>
+                                <option value="5">Paris</option>
+                                <option value="6">Prague</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <textarea name="message" id="" cols="30" rows="10">
+                            Description
+                        </textarea>
+                    </p>
                     <input type="submit">
+                    <br>
+                    <input type="reset">
+                    <br>
+                    <input type="button" value="Click Me">
+                    <button type="submit">
+                        <img src="" alt="">
+                    </button>
                 </fieldset>
             </form>
         </section>

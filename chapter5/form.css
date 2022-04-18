@@ -1,10 +1,16 @@
 body {
-    background-color: yellow;
+    background-color: gold;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
 }
 form {
     width: 500px;
 }
+fieldset {
+    margin: 20px 5px 0 25px;
+    padding: 5px 15px 15px 15px;
+}
 legend {
-    font-weight: bold;
+    font-style: italic;
+    font-size: 1.25em;
 }
