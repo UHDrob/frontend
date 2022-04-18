@@ -1,0 +1,10 @@
+body {
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form {
+    width: 500px;
+}
+legend {
+    font-weight: bold;
+}
