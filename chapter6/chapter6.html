@@ -15,7 +15,39 @@
 
     </main>
     <h1> Web Media</h1>
-    
+    <h2>1. Digital representation of images</h2>
+    <p><ul>
+        <li>Raster Image</li>
+        <p></p>
+        <li>Vector</li>
+    </ul></p>
+    <p>While resizing vector images still clear, that is not the case with raster images</p>
+    <h2>2. Color Models</h2>
+    <ul>
+        <li>CMYK color gamut</li>
+        <li>RGB color gamut</li>
+
+        <li>HSL color model: Hue 0-360% Saturation 0-100% Lightness 0-100%</li>
+    </ul>
+    <ul>
+        <li>Opacity 0-1.0</li>
+        <li>Gradients</li>
+    </ul>
+    <p>
+        Color Relationships - Wheel
+        <ul>
+            <li>Warmer Colors</li>
+            <li>Cooler Colors</li>
+        </ul>
+        <ul>
+            <li>Complementary (opposite)</li>
+            <li>Analogous  (adjacents)</li>
+            <li>Split complementary (Y)</li>
+            <li>Triad (triangle)</li>
+            <li>Tetradic (rectangular or double complement)</li>
+        </ul>
+    </p>
+
     <section>
         <h2>Gradient</h2>
         <div class="gradient1">
@@ -46,29 +78,102 @@
             <p> Test  </p>
         </div>
         <div class="rectangleB">
-            <p> Test  </p>        </div>
+            <p> Test  0.75</p>        </div>
         <div class="rectangleC">
-            <p> Test  </p>
+            <p> Test 0.50  </p>
         </div>
         <div class="rectangleD">
-            <p> Test  </p>
+            <p> Test 0.25 </p>
         </div>
+    </section>
+    <section>
+        <h2>3. Image Concepts</h2>
+        <p>
+            <strong>Color Depth</strong>: refers to the maximum number of possible colors that an image can contain
+            <ul>
+                <li>24-bit color</li>
+                <li>8-bit color</li>
+                <li>5-bit color</li>
+            </ul>
+        </p>
+        <p>
+            <strong>Image size</strong>: The size of an image onscreen is determined by the pixel dimensions of the image, the monitor size, and the computer's display resolution.
+            <br>
+            <strong>Interpolate</strong>
+        </p>
+        <p>
+            Image size - Enlarging in browser VS enlarging originals
+        </p>
+        <p> 
+            Display Resolution:
+            <ul>
+                <li>Effect of display resolution</li>
+                <li>Effect of monitor size</li>
+            </ul>
+        </p>
     </section>
 
     <section>
-        <h2>Audio and Video</h2>
+        <h2>4. File Formats</h2>
+        <ul>
+            <li>JPEG</li>
+            <ul>
+                <li>lossy compression</li>
+                <li>can create artifacts</li>
+            </ul>
+            <li>GIF</li>
+            <ul>
+                <li> pronunciation controversy</li>
+                <li> GIF is an 8=bit or less format, meaning that it can contain no more than 256 colors</li>
+                <li> Not great for photos</li>
+            </ul>
+            <li>PNG</li>
+            <ul>
+                <li>lossless compression</li>
+                <li>8-bit indexed color as well as full 24-bit true color</li>
+                <li>From 1 to 8 bits of Transparency (256 levels)</li>
+            </ul>
+            <li>SVG</li>
+            <ul>
+                <li>Very clear to enlarge images, no loss in quality</li>
+                <li>Supported in XML</li>
+            </ul>
+            <li>TIF</li>
+            <ul>
+                <li>multiple color depth, good for printing</li>
+            </ul>
+            <li>WebP</li>
+            support both lossy and lossless compression
+        </ul>
+    </section>
 
+    <section>
+        <h2>5. Audio and Video</h2>
+
+        <p>
+            <strong>codec</strong> media is encoded using compression/decompression software
+        </p>
+        <p>
+            <strong>Container Formats </strong>includes both audio and video
+            <ul>
+                <li>MP4 - Most popular</li>
+                <li>Ogg</li>
+                <li>WebM</li>
+            </ul>
+        </p>
         <h2 > <mark>Lake</mark> </h2>
-        <video controls loop autoplay width="300">
-            <source src="media/video/lake.mp4">
+        <video id="video" controls loop autoplay width="300">
+            <source src="media/video/lake.mp4" >
         </video>
-        <video controls loop autoplay width="300">
+        <video id="video" controls loop autoplay width="300">
             <source src="media/video/paris.mp4">
         </video>
-        <video controls loop autoplay width="300">
+        <video id="video" controls loop autoplay width="300">
             <source src="media/video/sunset.mp4">
         </video>
     </section>
+
+
 
 
     <footer>
