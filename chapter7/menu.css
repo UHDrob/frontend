@@ -1,0 +1,27 @@
+
+nav {
+    background-color: cyan;
+    width: 220px;
+    padding-left: 20px;;
+    
+}
+nav ul li{
+    list-style-type: none;
+}
+
+h2 {
+    text-align: right;
+}
+
+.menu {
+    position: absolute;
+    left: -210px;
+    padding: 10px 50px;
+}
+.menu:hover {
+    left: 0;
+    transition: left 0.6s ease-out;
+}
+.menu {
+    transition: left 0.6s ease-out;
+}
