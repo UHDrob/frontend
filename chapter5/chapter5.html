@@ -16,7 +16,12 @@
         <nav>
             <ul>
                 <li><h3>Content</h3></li>
-                <li>Introduction to Tables</li>
+                <li><a href="#introduction">Introduction to Tables</a> </li>
+                <li><a href="#styling">Styling Tables</a> </li>
+                <li><a href="#forms">Introducting Forms</a> </li>
+                <li><a href="#formcontrol">Form Control Elements</a> </li>
+                <li><h3>Examples</h3></li>
+                <li><a href="forms.html">Forms</a></li>
             </ul>
         </nav>
 
@@ -25,10 +30,29 @@
     </header>
     <main>
 
-        <h2>Introducing Tables</h2>
+        <h2 id="introduction">Introducing Tables</h2>
+        <p>Basic Table Structure</p>
+        <ul>
+            <li>caption</li>
+            <li>col</li>
+            <li>colgroup</li>
+            <li>table</li>
+            <li>tr</li>
+            <li>th</li>
+            <li>td</li>
+        </ul>
+        <p>Additional Table Elements</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        <ul>
+            <li>thead</li>
+            <li>tbody</li>
+            <li>tfoot</li>
+        </ul>
+        <p>Using Tables for Layout (not good idea)</p>
+
 
         <section>
-            <h3>Colspan</h3>
+            <p>Spanning Columns</p>
+            <h3>th colspan = 2</h3>
             <table>
                 <caption>Table 1</caption>
                 <tr>
@@ -53,9 +77,11 @@
                 </tr>
             </table>
         </section>
-        <br><br>
-        <h3>Rowspan</h3>
+        
+   
         <section>
+            <p>Rowspan</p>
+            <h3>td rowspan=3</h3>
             <table>
                 <caption>Table 2</caption>
                 <tr>
@@ -79,7 +105,9 @@
             </table>
         </section>
 
-        <h3>Accessibility</h3>
+        <section>
+            <p>Additional Table Elements</p>
+            <h3>thead tbody tfooter</h3>
         <table>
             <caption>19th Century French Paintings</caption>
             <col class="artistName">
@@ -117,9 +145,21 @@
             </tfoot>
 
         </table>
+        </section>
 
-        <br><br>
+        <h2 id="styling">Styling Tables</h2>
+        
         <section>
+            <h3>Border</h3>
+            <ul>
+                <li><strong>Table</strong></li>
+                <li>border: solid 1 pt blue</li>
+                <li>border-collapse: collapse</li>
+                <li><strong>td</strong></li>
+                <li>border: solid 1pt black</li>
+                <li>border-spacing: 10pt</li>
+                <li>padding: 10px</li>
+            </ul>
             <table>
                 <caption>Names</caption>
                 <tr>
@@ -134,14 +174,78 @@
                 </tr>
             </table>
         </section>
-        <section>
-            <ol type="A">
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>MIlk</li>
 
-            </ol>
+        <section>
+            <p>Hover</p>
+            <p>Zebra</p>
         </section>
+
+        <h2 id="forms">Introducting Forms</h2>
+        <p>Form structure</p>
+        <a href="forms.html">Forms</a>
+        <p>Query String</p>
+        <p>Get and Post Methods</p>
+        <p>HTML Form Elements</p>
+        <ul>
+            <li>button</li>
+            <ul>
+                <li>input</li>
+                <ul>
+                    <li>input type="radio" name="where" value="1" checked</li>
+                </ul>
+                <li>Checkbox</li>
+                <ul>
+                    <li>input type="checkbox" name="visit" value="Canada"</li>
+                </ul>
+                <li>Submit</li>
+                <ul>
+                    <li>input type="submit"</li>
+                </ul>
+                <li>Reset</li>
+                <ul>
+                    <li>input type="reset"</li>
+                </ul>
+            </ul>
+            <li>datalist id="cities"</li>
+            <ul>
+                <li>optiongroup</li>
+                <li>option</li>
+            </ul>
+            <li>fieldset</li>
+            <li>form</li>
+
+            <li>label</li>
+            <li>legend</li>
+            <li>select</li>
+            <ul>
+                <li>optiongroup</li>
+                <li>option value="1" selected</li>
+            </ul>
+            <li>textarea</li>
+            <li>output</li>
+        </ul>
+
+        <h2 id="formcontrol">Form Control Elements</h2>
+        <p>Form Structure</p>
+        <p>Text Input Controls</p>
+        <ul>
+            <li>input type="text" placeholder="Enter your name"< /li>
+            <li>textarea</li>
+            <li>input type="password"</li>
+            <li>input type="search"</li>
+            <li>input type="email"</li>
+            <li>input type="url"</li>
+            <li>input type="tel"</li>
+        </ul>
+        <p>Speciallized Controls </p>
+        <ul>
+            <li>File upload</li>
+            <li>number and range</li>
+            <li>input type="color"</li>
+            <li>date and time</li>
+        </ul>
+        
+
     </main>
     <footer>
         <p>&copy; 2022  Roberto Gomez</p>
