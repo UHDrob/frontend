@@ -2,20 +2,20 @@ var countries = [
     { name: "Canada",
       continent: "North America",
       cities: [
-       {firstName: "Mark", lastName: "Weiss" }]
+       {city: "Weiss" }]
     }, ,
     { name: "United States",
       continent: "North America",
       cities: [
-       {firstName: "Arthur", lastName: "Keown" },
-       {firstName: "John", lastName: "Martin" }]
+       {city: "Keown" },
+       {city: "Martin" }]
     },
     { name: "Italy",
       continent: "Europe",
       cities: [
-       {firstName: "Sylvan", lastName: "Barnet" },
-       {firstName: "William", lastName: "Cain" },
-       {firstName: "William", lastName: "Burto" }]
+       {city: "Barnet" },
+       {city: "Cain" },
+       {city: "Burto" }]
     },
     { name: "Spain",
       continent: "Europe",
@@ -35,7 +35,7 @@ var countries = [
  function outputAuthors(country) {
     for (i=0; i<country.cities.length;i++) {
        document.write(
-           country.cities[i].lastName + "<br>");
+           country.cities[i].city + "<br>");
     }
  }
  
