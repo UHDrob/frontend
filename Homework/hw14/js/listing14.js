@@ -2,24 +2,33 @@ var countries = [
     { name: "Canada",
       continent: "North America",
       cities: [
-       {city: "Weiss" }]
+       {city: "Calgary" },
+       {city: "Montreal"},
+       {city: "Toronto"}]
     }, ,
     { name: "United States",
       continent: "North America",
       cities: [
-       {city: "Keown" },
-       {city: "Martin" }]
-    },
+       {city: "Boston" },
+       {city: "Chicago" },
+       {city: "New York"},
+       {city: "Seattle"},
+       {city: "Washington"}]
+    }, 
     { name: "Italy",
       continent: "Europe",
       cities: [
-       {city: "Barnet" },
-       {city: "Cain" },
-       {city: "Burto" }]
+       {city: "Florence" },
+       {city: "Milan" },
+       {city: "Naples" },
+       {city: "Rome"}]
     },
     { name: "Spain",
       continent: "Europe",
-
+      cities: [ 
+       {city: "Almeria"},
+       {city: "Barcelona"},
+       {city: "Madrid"}]
     }
 
  ];
@@ -27,7 +36,7 @@ var countries = [
  function outputCountries() {
     for (i=0; i<countries.length; i++) {
        document.write(
-           "<h2>" +  countries[i].name + "</h2>" + "<p>" + countries[i].continent + "</p>");
+           "<h2>" + i + countries[i].name + "</h2>" + "<p>" + countries[i].continent + "</p>");
        outputAuthors(countries[i]);
     }
  }
