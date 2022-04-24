@@ -3,7 +3,7 @@ var books = [
      publisher: "Pearson",
      authors: [
       {firstName: "Mark", lastName: "Weiss" }]
-   },
+   }, ,
    { title: "Foundations of Finance",
      publisher: "Pearson",
      authors: [

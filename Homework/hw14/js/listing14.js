@@ -5,7 +5,7 @@ var countries = [
        {city: "Calgary" },
        {city: "Montreal"},
        {city: "Toronto"}]
-    }, ,
+    }, 
     { name: "United States",
       continent: "North America",
       cities: [
