@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaper 9 -2</title>
+</head>
+<body>
+    <div id="first">
+        <h1>DOM Example</h1>
+        <p>Existing Element</p>
+    </div>
+    <script>
+        // Begin by creating two new nodes
+        var text = document.createTextNode("this is dynamic");
+        var p = document.createElement("p");
+        // add the text node to the P element node
+        p.appendChild(text);
+        // now add the new P element to the DIV
+        var first = document.getElementById("first");
+        first.appendChild(p);
+    </script>
+    
+</body>
+</html>
