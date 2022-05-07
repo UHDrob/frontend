@@ -1,0 +1,118 @@
+/* reset */
+* {
+   margin: 0;
+}
+
+body {
+   font-family: "Roboto", Verdana, Arial, sans-serif;
+   font-size: 100%;
+ background-color: #ECEFF1;    
+}
+
+section {
+   background-color: white;
+   margin: 1em 4em 1em 4em;
+   border: solid 1pt black;
+
+}
+section h3 {
+  color: white;
+  padding: 0.75rem;
+  background-color: #263238; 
+}
+
+.status {
+    border-radius: 0.25rem;
+    padding: 3px;
+    color: white;
+    
+}
+.status-processing {
+    background-color:    #E65100;    
+}
+.status-shipped {
+    background-color:   #4CAF50;    
+}
+.status-pending {
+    background-color:    #03A9F4;    
+}
+
+
+
+/* table formatting */
+
+table {
+   margin: 0.5em auto;
+    width: 90%;
+	color: #666;
+	font-size: 0.85em;
+}
+table caption {
+	background-color: #607D8B; 
+	color: white;
+	font-size: 1em;
+	padding: 0.5rem;
+	text-align: center;
+}
+tr {
+padding: 0.75rem;   
+}
+td, th {
+   padding: 0.75rem;   
+    text-align: left;
+}
+th { 
+    font-size: 1.2em;
+}
+
+/* form formatting */
+
+form {
+   margin: 0.5em auto;
+    width: 90%;
+}
+fieldset {
+  padding: 0 1em 1em 1em;   
+}
+legend {
+	background-color: #607D8B; 
+	color: white;
+	font-size: 1em;
+	padding: 0.5rem;
+	text-align: center;  
+    width: 100%;
+    font-size: 0.85em;
+}
+
+label {
+    font-weight: bold; 
+}
+form p {
+   margin-top: 1em;   
+}
+
+input[type=text], input[type=date], select {
+   height: 1.6rem; 
+}
+
+input[type=submit] {
+   background-color: #673AB7;
+    color: white;
+    height: 3em;
+    width: 7em;
+    border-style: none;
+}
+input[type=submit]:hover {
+    background-color: #6200EA;
+}
+input[type=reset] {
+   background-color: #673AB7;
+    color: white;
+    height: 3em;
+    width: 7em;
+    border-style: none;
+}
+input[type=reset]:hover {
+    background-color: #6200EA;
+}
+
