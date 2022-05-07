@@ -6,5 +6,3 @@ String.prototype.countChars = function (c) {
    }
    return count;
 }
-var msg = "Hello World";
-alert(msg + "has" + msg.countChars("l") + " letter l's");

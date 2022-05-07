@@ -1,5 +1,5 @@
 function result(a,b) {
-  return a + b;
+   return a + b;
 }
 // outputs 12
 alert(result(5,7));
@@ -13,7 +13,5 @@ function something(x,y) {
 
 // outputs 35
 alert(something(5,7));
-
-
 // this line will generate this console error: "result is not a function"
 alert(result(5,7));

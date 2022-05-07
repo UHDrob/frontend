@@ -3,7 +3,7 @@ function Die(col) {
    this.faces=[1,2,3,4,5,6];
    this.randomRoll = function() {
       var randNum = Math.floor((Math.random() * this.faces.length) + 1);
-      return this.faces[randNum-1];
+      return faces[randNum-1];
    };
 }
 

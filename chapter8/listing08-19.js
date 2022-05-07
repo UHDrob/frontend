@@ -4,7 +4,7 @@ function Die(col) {
 }
 Die.prototype.randomRoll = function() {
    var randNum = Math.floor((Math.random() * this.faces.length) + 1);
-   return this.faces[randNum-1];
+   return faces[randNum-1];
 };
 
 // now create a whole bunch of Die objects

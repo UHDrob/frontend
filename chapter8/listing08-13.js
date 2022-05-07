@@ -9,4 +9,3 @@ function calculateTotal(price,quantity) {
       return tax;
    }
 }
-alert (Test=calculateTotal(2,10)) 

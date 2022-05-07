@@ -4,4 +4,3 @@ var calculateSubtotal = function (price,quantity) {
 };
 // invokes the function
 var result = calculateSubtotal(10,2);
-alert (result)
