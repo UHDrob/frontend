@@ -10,7 +10,7 @@
 <body>
     <header>
            
-            <h1>Chapter 7 </h1>
+            <h1>Chapter 7 Advanced CSS: Layout</h1>
             <h5> <a href="../index.html">Home</a> </h5>
         
         <nav>
@@ -49,34 +49,57 @@
     </header>
     <main>
         <section id="normalflow">
-            <h2>Normal Flow</h2>
+            <h2>7.1 Normal Flow</h2>
             <p>
                 <strong>Normal Flow:</strong>how the browser will normally display block-level elements and inline elements from left to right and from top to bottom. Adjusted by the size of the browser.
             </p>
-            <p>Block and Inline Elements: h1  ul  p  div  </p>
+            <p>Block Elements</p>
+            <p>SInline Elements: h1  ul  p  div  </p>
             <p>div containing a p containing another div</p>
         </section>
         <section id="positioningelements">
-            <h2>Postioning Elements</h2>
+            <h2>Positioning Elements</h2>
             <ul>
                 <li> <a href="absolute.html">Absolute</a>  the element is removed from normal flow and positioned in relation to its nearest positioned ancestor.</li>
                 <li> <a href="fixed.html">Fixed</a> the element is fixed in a specific position in the window even when the document is scrolled</li>
                 <li> <a href="relative.html">Relative</a> the element is moved relative to where it would be in the normal flow </li>
                 <li> <strong>Static</strong>  the element is positioned according to the normal flow. This is the default</li>
             </ul>
-            <p> <a href="zindex.html">Z-Index</a> </p>
+            <ul>
+                <li>Relative Positioning</li>
+                <li>Absolute Positioning</li>
+                <li>     <a href="zindex.html">Z-Index</a> </li>
+                <li>Fixed Position</li>
+            </ul>
+            <p>CSS3 Transforms</p>
+            <p>CCSS3 persperctive</p>
+
         </section>
 
         <section id="floatingelements">
             <h2>Floating Elements</h2>
             <p> <strong>CSS <a href="floatingelement.html">float</a>  property</strong> will displace an elemenet out of its position</p>
+
             <ul>
-                <li>left</li>
-                <li>right</li>
-                <li>both</li>
-                <li>none</li>
+                <li>Floating within a Container</li>
+                <li>Floating Multiple Items Side by Side</li>
+                <ul>
+                    <li>left</li>
+                    <li>right</li>
+                    <li>both</li>
+                    <li>none</li>
+                </ul>
+                <li>Containing Floats</li>
+                <ul>
+                    <li>overflow</li>
+                </ul>
+                <li>Overlaying and Hiding Elements</li>
+                <ul>
+                    <li>Visibility property</li>
+                </ul>
             </ul>
-            <p>Overlaying and Hidding elements</p>
+
+            
             <p>Comparing visibility with display</p>
             <ul>
                 <li>display auto</li>
@@ -89,21 +112,47 @@
         <section id="multicolumnlayouts">
             <h2>Constructing Multicolumn Layouts</h2>
             <p>Use Floats to Create Columns</p>
+            <p>  Using Positioning to Create Columns </p>
+            <p>Using Flexbox to Create Columns</p>
+            <p>Justify-content:</p>
+            <ul>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+            </ul>
+            <p>align-items</p>
+            <p>flex-direction</p>
+            <p>Liquid layouts</p>
+            
         </section>
 
         <section id="responsivedesign">
             <h2>Responsive Design</h2>
             <p>Responsive Layouts</p>
-            <p>4 elements:</p>
+            <p>4 Key components that make responsive design works:</p>
             <ul>
                 <li>Liquid layouts</li>
                 <li>Setting viewports via the meta tag</li>
                 <li>Customizing the CSS for different viewpoints using media queries</li>
                 <li>Scaling images to the viewport size</li>
             </ul>
+            <p> Setting Viewports</p>
             <p>Media queries</p>
+            <ul>
+                <li>width</li>
+                <li>height</li>
+                <li>device-width</li>
+                <li>device-height</li>
+                <li>orientation</li>
+                <li>color</li>
+            </ul>
+            
             <p>Responsive Design Patterns</p>
             <ul>
+                <li>Mostly Fluid</li>
+                <li>Column Drop</li>
                 <li>Off Canvas</li>
             </ul>
             <p>Scaling Images  max-width:"100%"</p>
@@ -113,15 +162,23 @@
             <h2>Filters, Transitions, and Animations</h2>
             <p>Filters</p>
             <p>Transition</p>
-            <ol>
+            <ul>
+                <li>transition</li>
                 <li>transition-property</li>
                 <li>transition-duration</li>
                 <li>transition-timing-function</li>
                 <li>transition-delay</li>
+            </ul>
+            <ol>
+                1. The CSS property which will be transitioned
+                2. The duration of the transition
+                3. The easing function to use (optional), which changes the speed and style of the transition
+                4. How long to delay before starting the transition (optional)
             </ol>
             <button>Test</button>
-            <p><a href="menu.html">Menu Example</a></p>
-            <p><a href="animation.html">Animation</a></p>
+            <p><a href="menu.html">Menu Animation</a></p>
+            <p>Anitmations</p>
+            <p><a href="animation.html">Animation</a> in progress</p>
         </section>
 
         <section id="cssframework">
@@ -132,6 +189,7 @@
                 <li>Material Lite (Google)</li>
             </ul>
             <p>Grid in print design</p>
+            <p>Naming Conventions and Style Guides</p>
             <p>Preprocessors</p>
         </section>
 
