@@ -2,10 +2,26 @@
     animation-iteration-count: infinite;
     animation-name: bounceIn;
     animation-play-state: running;
-    animation-duration: 2s;
+    animation-duration: 7s;
     animation-timing-function: ease-out;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 .animated:hover {
     animation-play-state: paused;
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        color: blue;
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.4);
+        color: red;
+        opacity: 1;
+    }
+    100% {
+        color: green;
+        transform: scale(1);
+    }
 }

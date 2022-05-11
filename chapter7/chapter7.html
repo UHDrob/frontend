@@ -20,7 +20,7 @@
                 <li><a href="#positioningelements">Positioning Elements</a>  </li>
                 <li><a href="#floatingelements">Floating Elements</a></li>
                 <li><a href="#multicolumnlayouts">Constructing MultiColumn Layouts</a> </li>
-                <li><a href="#approaches">Apporaches to CSS layouts</a></li>
+                <li><a href="#approaches">Approaches to CSS layouts</a></li>
                 <li><a href="#responsivedesign">Responsive Design</a></li>
                 <li><a href="#filters">Filters, Transitions, and Animations</a></li>
                 <li><a href="#cssframework">CSS Frameworks and Preprocessors</a></li>
@@ -30,6 +30,7 @@
                 <li><a href="fixed.html">Fixed</a></li>
                 <li><a href="relative.html">Relative</a></li>
                 <li><a href="zindex.html">Z-index</a></li>
+                <li> <a href="transform.html">Transform</a> </li>
                 <li><a href="floatingelement.html">Floating Element</a></li>
                 <li><a href="menu.html">Slide Menu</a></li>
                 <li><a href="animation.html">Animation</a></li>
@@ -49,7 +50,15 @@
     </header>
     <main>
         <section id="normalflow">
-            <h2>7.1 Normal Flow</h2>
+
+            <h2>Normal Flow</h2>
+            <ul class="terms">
+                <li>normal flow</li>
+                <li>block-level elements</li>
+                <li>inline elements</li>
+                <li>re[;aced inline elements</li>
+                <li>nonreplaced inline elements</li>
+            </ul>
             <p>
                 <strong>Normal Flow:</strong>how the browser will normally display block-level elements and inline elements from left to right and from top to bottom. Adjusted by the size of the browser.
             </p>
@@ -57,6 +66,7 @@
             <p>SInline Elements: h1  ul  p  div  </p>
             <p>div containing a p containing another div</p>
         </section>
+
         <section id="positioningelements">
             <h2>Positioning Elements</h2>
             <ul>
@@ -65,31 +75,60 @@
                 <li> <a href="relative.html">Relative</a> the element is moved relative to where it would be in the normal flow </li>
                 <li> <strong>Static</strong>  the element is positioned according to the normal flow. This is the default</li>
             </ul>
-            <ul>
-                <li>Relative Positioning</li>
-                <li>Absolute Positioning</li>
-                <li>     <a href="zindex.html">Z-Index</a> </li>
-                <li>Fixed Position</li>
+            <h3>Relative Positioning</h3>
+            <ul class="terms">
+                <li>relative positioning</li>
             </ul>
-            <p>CSS3 Transforms</p>
+            <h3>Absolute Positioning</h3>
+            <ul class="terms">
+                <li>FlexBox layout Model</li>
+            </ul>
+            <h3>Z-Index</h3>
+            <ul class="terms">
+                <li>z-index</li>
+            </ul>
+            <a href="zindex.html">Z-Index</a> 
+            <h3>Fixed Position</h3>
+            <ul class="terms">
+                <li>fixed positioning</li>
+                <li>transform</li>
+            </ul>
+            <a href="transform.html">Transform</a>
+            <ul>
+                <li>Transform: rotate (45deg)</li>
+                <li>Transform: skew(-20deg)</li>
+                <li>Transform: translatex(100px) translatey(-30px)</li>
+                <li>Transform rotate(45deg) scale(0.5);</li>
+            </ul>
             <p>CCSS3 persperctive</p>
 
         </section>
 
         <section id="floatingelements">
             <h2>Floating Elements</h2>
+            <ul class="terms">
+                <li>floating property</li>
+            </ul>
             <p> <strong>CSS <a href="floatingelement.html">float</a>  property</strong> will displace an elemenet out of its position</p>
-
-            <ul>
-                <li>Floating within a Container</li>
-                <li>Floating Multiple Items Side by Side</li>
+            <h3>Floating withing a Container</h3>
+            <ul class="terms">
+                <li>containing block</li>
+            </ul>
+            <p>Margins do not collapse on floated block-level elements</p>
+            <h3>Floating Multiple Items Side by Side</h3>
+            <ul class="terms">
+                <li>clear property</li>
+            </ul>
                 <ul>
                     <li>left</li>
                     <li>right</li>
                     <li>both</li>
                     <li>none</li>
                 </ul>
-                <li>Containing Floats</li>
+            <h3>Containing Floats</h3>
+            <ul class="terms"t>
+                <li>positioning context</li>
+            </ul>
                 <ul>
                     <li>overflow</li>
                 </ul>
@@ -111,6 +150,9 @@
 
         <section id="multicolumnlayouts">
             <h2>Constructing Multicolumn Layouts</h2>
+            <h3>Using Floats to Create Columns</h3>
+            <h3>Using Positioning to Create Columns</h3>
+            <h3>Using Flexbox to Create Columns</h3>
             <p>Use Floats to Create Columns</p>
             <p>  Using Positioning to Create Columns </p>
             <p>Using Flexbox to Create Columns</p>
@@ -128,9 +170,24 @@
             
         </section>
 
+        <section id="approaches">
+            <h2>Approaches to CSS Layout</h2>
+            <h3>Fixed Layout</h3>
+            <ul class="terms">
+                <li>fixed layout</li>
+            </ul>
+            <h3>Liquid Layout</h3>
+            <ul class="terms">
+                <li>liquid layout (also called fluid layout(</li>
+            </ul>
+        </section>
+
         <section id="responsivedesign">
             <h2>Responsive Design</h2>
-            <p>Responsive Layouts</p>
+            <ul class="terms">
+                <li>resposive design</li>
+            </ul>
+            <p>Mobile First Design</p>
             <p>4 Key components that make responsive design works:</p>
             <ul>
                 <li>Liquid layouts</li>
@@ -138,8 +195,14 @@
                 <li>Customizing the CSS for different viewpoints using media queries</li>
                 <li>Scaling images to the viewport size</li>
             </ul>
-            <p> Setting Viewports</p>
-            <p>Media queries</p>
+            <h3>Setting Viewports</h3>
+            <ul class="terms">
+                <li>viewport</li>
+            </ul>
+            <h3>Media Queries</h3>
+            <ul class="terms">
+                <li>CSS media queries</li>
+            </ul>
             <ul>
                 <li>width</li>
                 <li>height</li>
@@ -148,20 +211,33 @@
                 <li>orientation</li>
                 <li>color</li>
             </ul>
-            
-            <p>Responsive Design Patterns</p>
+            <ul class="terms">
+                <li>progressive enhancement</li>
+            </ul>
+            <h4>Responsive Design Patterns</h4>
             <ul>
                 <li>Mostly Fluid</li>
                 <li>Column Drop</li>
                 <li>Off Canvas</li>
             </ul>
+            <h3>Scaling Images</h3>
             <p>Scaling Images  max-width:"100%"</p>
         </section>
 
+
+
         <section id="filters">
             <h2>Filters, Transitions, and Animations</h2>
-            <p>Filters</p>
-            <p>Transition</p>
+            <h3>Filters</h3>
+            <ul class="terms">
+                <li>filters</li>
+                <li>image placeholder services</li>
+            </ul>
+            <h3>Transition</h3>
+            <ul class="terms">
+                <li>transition</li>
+            </ul>
+
             <ul>
                 <li>transition</li>
                 <li>transition-property</li>
@@ -170,27 +246,60 @@
                 <li>transition-delay</li>
             </ul>
             <ol>
-                1. The CSS property which will be transitioned
-                2. The duration of the transition
-                3. The easing function to use (optional), which changes the speed and style of the transition
-                4. How long to delay before starting the transition (optional)
+                <li> The CSS property which will be transitioned </li>
+                <li> The duration of the transition  </li>
+                <li> The easing function to use (optional), which changes the speed and style of the transition </li>
+                <li>  How long to delay before starting the transition (optional)</li>
             </ol>
             <button>Test</button>
-            <p><a href="menu.html">Menu Animation</a></p>
-            <p>Anitmations</p>
-            <p><a href="animation.html">Animation</a> in progress</p>
+            <p><a href="menu.html">Slide Menu</a></p>
+            <h3>Animations</h3>
+            <ul class="terms"t>
+                <li>animation</li>
+                <li>keyframe</li>
+            </ul>
+            <p>To animate an element in CSS</p>
+            <ol>
+                <li>Define a set of keyframes rules using the @keyframes keyword</li>
+                <li>Assign the various animation properties to the element to be animated</li>
+            </ol>
+            <ul>
+                <li>animation</li>
+                <li>animation-delay</li>
+                <li>animation-direction</li>
+                <li>animation-iteration-count</li>
+                <li>animation-name</li>
+                <li>animation-play-state</li>
+                <li>animation-fill-mode</li>
+                <li>anumation-timing-function</li>
+            </ul>
+            <a href="animation.html">Animation</a>
         </section>
 
         <section id="cssframework">
             <h2>CSS Frameworks and Preprocessors</h2>
-            <p>CSS Frameworks</p>
+            <h3>CSS Frameworks</h3>
+            <ul class="terms">
+                <li>CSS framework</li>
+            </ul>
             <ul>
                 <li>Bootstrap (Tweeter)</li>
                 <li>Material Lite (Google)</li>
             </ul>
             <p>Grid in print design</p>
-            <p>Naming Conventions and Style Guides</p>
-            <p>Preprocessors</p>
+            <h4>Naming Conventions and Style Guides</h4>
+            <ul class="terms">
+                <li>BEM block-element-modifier</li>
+                <li>block</li>
+                <li>element</li>
+                <li>modifier</li>
+                <li>style guide</li>
+            </ul>
+            <h3>Preprocessors</h3>
+            <ul class="terms">
+                <li>ASP.NET</li>
+            </ul>
+            <p>minification</p>
         </section>
 
     </main>
