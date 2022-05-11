@@ -4,6 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.terms {
+    color: green;
+    list-style-type: none;
+}
+
 main {
     margin-left: 300px;
 }
