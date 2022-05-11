@@ -11,7 +11,7 @@
 <body>
     <header>
            
-        <h1>Chapter 7 Web Media</h1>
+        <h1>Chapter 6 Web Media</h1>
         <h5> <a href="../index.html">Home</a> </h5>
     
     <nav>
@@ -42,7 +42,15 @@
 </header>
     <main>
         <section id="digital">
-            <h2>1. Digital representation of images</h2>
+            <h2>Digital representation of images</h2>
+            <ul class="terms">
+                <li>pixels</li>
+                <li>halftones</li>
+                <li>digital representation</li>
+                <li>raster image</li>
+                <li>bitmap image</li>
+                <li>vector image</li>
+            </ul>
             <ul>
                 <li>Raster Image <br>
                     <p>While resizing vector images still clear, that is not the case with raster images</p>
@@ -54,7 +62,33 @@
         </section>
 
         <section>
-            <h2>2. Color Models</h2>
+            <h2 id="colormodels">Color Models</h2>
+            <h3>RGB</h3>
+            <ul class="terms">
+                <li>RGB (for Red-Green-Blue) color model</li>
+                <li>additive colors</li>
+            </ul>
+            <h3>CMYK</h3>
+            <ul class="terms">
+                <li>CMYL color model</li>
+                <li>substractive colors</li>
+                <li>gamut</li>
+            </ul>
+            <h3>HSL</h3>
+            <ul class="terms">
+                <li>HSL color model</li>
+                <li>saturation</li>
+                <li>lightness</li>
+            </ul>
+            <h3>Opacity</h3>
+            <ul class="terms">
+                <li>opacity</li>
+                <li>alpha transparency</li>
+            </ul>
+            <h3>Gradients</h3>
+            <ul class="terms">
+                <li>gradient</li>
+            </ul>
             <ul>
                 <li>RGB  rgb(100,55,245) </li>
                 <li>CMYK </li>
@@ -65,8 +99,8 @@
                 rgb(0, 255, 0, 0.50);</li>
                 <li>Gradients</li>
             </ul>
-            <p>
-                Color Relationships - Wheel
+
+            <h3>Color Relationships</h3>
                 <ul>
                     <li>Warmer Colors</li>
                     <li>Cooler Colors</li>
@@ -82,7 +116,7 @@
         </section>
 
         <section>
-            <h2>Gradient</h2>
+            <p>gradients examples</p>
             <div class="gradient1">
                 <h3>Gradiant Top = Bottom</h3>
                 <p>Color stop green, color stop white</p>
@@ -106,7 +140,7 @@
         </section>
 
         <section>
-            <h2>Transparency</h2>
+            <p>Transparency< examples/p>
             <div class="rectangleA">
                 <p> Test  </p>
             </div>
@@ -121,15 +155,27 @@
         </section>
 
         <section>
-            <h2>3. Image Concepts</h2>
+            <h2 id="imageconcetps">Image Concepts</h2>
+            <h3>Color Depth</h3>
+            <ul class="terms">
+                <li>color depth</li>
+                <li>dithering</li>
+            </ul>
             <p>
                 <strong>Color Depth</strong>: refers to the maximum number of possible colors that an image can contain
                 <ul>
-                    <li>24-bit color -true color</li>
                     <li>8-bit color -indexed color</li>
-                    <li>5-bit color</li>
+                    <li>24-bit color -true color</li>
+                    <li>32 bits</li>
+                    <li>48 bits</li>
                 </ul>
             </p>
+
+            <h3>Image Size</h3>
+            <ul class="terms">
+                <li>image size</li>
+            </ul>
+
             <p>
                 <strong>Image size</strong>: The size of an image onscreen is determined by the pixel dimensions of the image, the monitor size, and the computer's display resolution.
                 <br>
@@ -138,24 +184,64 @@
             <p>
                 Image size - Enlarging in browser VS enlarging originals
             </p>
-            <p> 
-                Display Resolution:
+
+            <h3>Display Resolution</h3>
+            <ul class="terms">
+                <li>display resolution</li>
+                <li>pixel</li>
+                <li>device pixels</li>
+            </ul>
                 <ul>
                     <li>Effect of display resolution</li>
                     <li>Effect of monitor size</li>
                 </ul>
-            </p>
+            
         </section>
 
         <section>
-            <h2>4. File Formats</h2>
-            <ul>
-                <li>JPEG</li>
-                <ul>
+            <h2 id="fileformats">File Formats</h2>
+            <h3>JPEG</h3>
+            <ul class="terms">
+                <li>JPEG Join Photgraphic Experts Group</li>
+                <li>lossy compression</li>
+                <li>artifacts</li>
+            </ul>
+                <ul >
                     <li>lossy compression</li>
                     <li>can create artifacts</li>
                 </ul>
-                <li>GIF</li>
+            <h3>GIF</h3>
+            <ul class="terms">
+                <li>GIF Graphic Interchange Format</li>
+                <li>lossless</li>
+                <li>run-length compression also called LZW compression</li>
+            </ul>
+            <h4>8-Bits or Less Color</h4>
+            <ul class="terms">
+                <li>color palette (color table or color map)</li>
+                <li>web-safe color palette</li>
+                <li>Anti-aliasing</li>
+            </ul>
+            <h4>Animation</h4>
+            <ul class="terms">
+                <li>cinemagraph</li>
+            </ul>
+
+            <h3>PNG</h3>
+            <ul class="terms">
+                <li>PNG</li>
+            </ul>
+
+            <h3>SVG</h3>
+            <ul  class="terms">
+                <li>SVG</li>
+            </ul>
+
+            <h3>Other Formats</h3>
+            <ul class="terms">
+                <li>TIF Tagged Image File</li>
+                <li>favicon</li>
+            </ul>
                 <ul>
                     <li> pronunciation controversy</li>
                     <li> GIF is an 8=bit or less format, meaning that it can contain no more than 256 colors</li>
@@ -182,7 +268,26 @@
         </section>
 
         <section>
-            <h2>5. Audio and Video</h2>
+            <h2 id="audiovideo">Audio and Video</h2>
+            <h3>Media Concepts</h3>
+            <ul class="terms">
+                <li>media encoding</li>
+                <li>codec</li>
+                <li>container formats</li>
+            </ul>
+            <h3>Browser Video Support</h3>
+            <ul class="terms">
+                <li>MPEG-4</li>
+            </ul>
+
+            <h3>Borwser Audio Support</h3>
+            <ul>
+                <li>MP3</li>
+                <li>WAV</li>
+                <li>OGG</li>
+                <li>Web</li>
+                <li>MP4</li>
+            </ul>
             <ul>
                 <li>Media format</li>
                 <li>Browser Support for Video Format</li>

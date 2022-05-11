@@ -13,6 +13,9 @@ h1 {
     color: white;
     padding: 10px 40px;
 }
+h2 {
+    color: blue;
+}
 nav {
     background-color: cyan;
     width: 300px;
@@ -35,7 +38,10 @@ footer {
 }
 
 
-
+.terms {
+    color:green;
+    list-style-type: none;
+}
 
 
 
