@@ -14,11 +14,16 @@ main {
 }
 
 h1 {
+    text-align: center;
     background-color: blue;
     color: white;
     padding: 10px 40px;
 }
+h2 {
+    color:blue;
+}
 nav {
+    position: fixed;
     background-color: cyan;
     width: 300px;
     float: left;
