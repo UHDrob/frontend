@@ -24,6 +24,11 @@
                 
                 <li><h3>Examples</h3></li>
                 <li><a href="forms.html">Forms</a></li>
+
+                <li><h3>Projects</h3></li>
+                <li><a href="project1/Chapter09-project01.html">Project 1</a></li>
+                <li><a href="project2/Chapter09-project02.html">Project 2</a></li>
+                <li><a href="project3/Chapter09-project03.html">Project 3</a></li>
             </ul>
         </nav>
     </header>
@@ -31,9 +36,35 @@
 
         <section>
             <h2 id="dom">The Document Object Model (DOM)</h2>
-            <p>Nodes and NodeLists</p>
-            <p>Document Object</p>
-            <p>Selection Methods</p>
+            <h3>Nodes and NodeLists</h3>
+            <ul class="terms">
+                <li>node</li>
+            </ul>
+            <p>Essential node properties</p>
+            <ul>
+                <li>attributes</li>
+                <li>childNodes</li>
+                <li>firstChild</li>
+                <li>lastChild</li>
+                <li>nextSibling</li>
+                <li>nodeName</li>
+                <li>nodeType</li>
+                <li>nodeValue</li>
+                <li>parentNode</li>
+                <li>previousSibling</li>
+                <li>textContent</li>
+            </ul>
+            <h3>Document Object</h3>
+            <ul class="terms">
+                <li>DOM document object</li>
+            </ul>
+            <p>Methods categories</p>
+            <ol>
+                <li>Selection Methods</li>
+                <li>Family manipulation methods</li>
+                <li>Event methods</li>
+            </ol>
+            <h3>Selection Methods</h3>
             <ul>
                 <li>Classic</li>
                 <ul>
@@ -47,8 +78,14 @@
                     <li>querySelectorAll()</li>
                 </ul>
             </ul>
+            <ul class="terms">
+                <li>selection methods</li>
+            </ul>
             <p>Query Selector</p>
-            <p>Element Node Object</p>
+            <h3>Element Node Object</h3>
+            <ul class="terms">
+                <li>element node</li>
+            </ul>
             <ul>
                 <li>classList</li>
                 <li>className</li>
@@ -68,9 +105,15 @@
 
         <section>
             <h2 id="modifyDom">Modifying the DOM</h2>
-            <p>Changing an Element's Style</p>
+            <h3>Changing an Element's Style</h3>
             <p>Meet the family</p>
-            <p>Changing and Element's Content</p>
+            <h3>Changing and Element's Content</h3>
+            <h3>DOM Timing</h3>
+            <h4>Tools Insight</h4>
+            <ul class="terms">
+                <li>linter</li>
+            </ul>
+            <p>jslint.com</p>
             <p>Creating DOM elements</p>
             <ul>
                 <li>Create a new text node</li>
@@ -84,22 +127,68 @@
 
         <section>
             <h2 id="events">Events</h2>
-            <p>Event-Handling Approaches - Inline Hook</p>
-            <p>Event-Handling Approaches - Event Property Approach</p>
-            <p>Event-Handling Approaches - Event Listener Approach</p>
+            <ul class="terms">
+                <li>event</li>
+            </ul>
+            <h3>Event-Handling Approaches - Inline Hook</h3>
+            <h4>Inline Event-Handling Approach</h4>
+            <ul class="terms">
+                <li>event handler</li>
+            </ul>
+            <h4>Event Property Approach</h4>
+            <h4>Event Listener Approach</h4>
+            <ul class="terms">
+                <li>event listener</li>
+            </ul>
+
             <p>Event-Handling Approaches - Event Listener Approach (anon function)</p>
-            <p>Event Object</p>
+            <h4>Event Object</h4>
             <ul>
                 <li>bubbles</li>
                 <li>cancelable</li>
                 <li>target</li>
                 <li>type</li>
             </ul>
+            <h4>Mouse Events</h4>
+            <ul id="terms">
+                <li>mouse events</li>
+            </ul>
+            <ul>
+                <li>click</li>
+                <li>dblclick</li>
+                <li>mousedown</li>
+                <li>mouseup</li>
+                <li>mouseover</li>
+                <li>mouseout</li>
+                <li>mousemove</li>
+            </ul>
+            <h4>Keyboard Events</h4>
+            <ul>
+                <li>keydown</li>
+                <li>keypress</li>
+            </ul>
+            <h3>Event Object</h3>
+            <ul class="terms">
+                <li>event type</li>
+            </ul>
+            <ol>
+                <li>Bubbles</li>
+                <li>Cancelable</li>
+                <li>preventDefault</li>
+            </ol>
+            <h4>Event Delegation</h4>
+            <ul class="terms">
+                <li>event delegation</li>
+                <li>event bubbling or event propagation</li>
+            </ul>
         </section>
 
-        <section>
-            <h2 id="eventsTypes">Events Types</h2>
-            <p>Mouse Events</p>
+        <section id="eventsTypes">
+            <h2 >Events Types</h2>
+            <h3>Mouse Events</h3>
+            <ul class="terms">
+                <li>mouse events</li>
+            </ul>
             <ul>
                 <li>click</li>
                 <li>dblclick</li>
@@ -112,13 +201,23 @@
                 <li>keypress</li>
                 <li>keyup</li>
             </ul>
-            <p>Touch Events</p>
+            <h3>Keyboard Events</h3>
+            <ul class="terms">
+                <li>keyboard events</li>
+            </ul>
+            <h3>Touch Events</h3>
+            <ul class="terms">
+                <li>touch events</li>
+            </ul>
             <ul>
                 <li>touchstart  from mousedown</li>
                 <li>touchmove  from mousemove</li>
                 <li>touchend  from mouseup</li>
             </ul>
-            <p>Form Events</p>
+            <h3>Form Events</h3>
+            <ul class="terms">
+                <li>form events</li>
+            </ul>
             <ul>
                 <li>Blur</li>
                 <li>Change</li>
@@ -127,7 +226,7 @@
                 <li>select</li>
                 <li>Submit</li>
             </ul>
-            <p>Frame Events</p>
+            <h3>Frame Events</h3>
             <ul>
                 <li>abort</li>
                 <li>error</li>
@@ -138,17 +237,19 @@
             </ul>
         </section>
 
-        <section>
-            <h2 id="Forms">Forms</h2>
-            <p>Responding to Form Movement Events</p>
-            <p>Responding to Form Changes Event</p>
-            <p>Validating a Submitted Form</p>
-            <ul>
-                <li>Field Vallidation</li>
-                <li>Number Validation</li>
-                <li>Other</li>
+        <section id="forms">
+            <h2 >Forms</h2>
+            <h4>Movement Events</h4>
+            <ul class="terms">
+                <li>blur</li>
+                <li>focus</li>
             </ul>
-            <p>Submitting Forms</p>
+            <h3>Responding to Form Movement Events</h3>
+            <h3>Validating a Submitted Form</h3>
+            <h4>Empty Field Validation</h4>
+            <h4>Number Validation</h4>
+            <h3>Submitting Forms</h3>
+            <h4>AJAX</h4>
         </section>
 
         <section>
