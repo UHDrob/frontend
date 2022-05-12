@@ -1,0 +1,59 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.terms {
+    color: green;
+    list-style-type: none;
+}
+
+
+main {
+    margin-left: 300px;
+}
+
+h1 {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 10px 40px;
+}
+h2 {
+    color:blue;
+}
+
+nav {
+    position: fixed;
+    background-color: cyan;
+    width: 300px;
+    float: left;
+    margin: 0 0 20px 0;
+    
+}
+nav ul li {
+    list-style-type: none;
+}
+section{
+    padding: 20px;
+}
+footer {
+    background-color: blue;
+    color: gray;
+    padding 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+button {
+    padding: 20px 40px;
+    color: white;
+    background-color: green;
+    transition-property: background-color;
+    transition-duration: 3.5;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+}
+button:hover {
+    background-color: #60b946;
+}
