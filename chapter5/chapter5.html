@@ -20,8 +20,11 @@
                 <li><a href="#styling">Styling Tables</a> </li>
                 <li><a href="#forms">Introducting Forms</a> </li>
                 <li><a href="#formcontrol">Form Control Elements</a> </li>
+
                 <li><h3>Examples</h3></li>
-                <li><a href="forms.html">Forms</a></li>
+                <a href="forms.html">Forms</a>
+                
+
                 <li><h3>Projects</h3></li>
                 <li><a href="project1/chapter05-project01.html">Project 1</a></li>
                 <li><a href="project2/chapter05-project02.html">Project 2</a></li>
@@ -34,32 +37,35 @@
     </header>
     <main>
 
-        <h2 id="introduction">Introducing Tables</h2>
-        <ul class="terms">
-            <li>table</li>
-        </ul>
-        <p>Basic Table Structure</p>
-        <p>Spanning Rows and Columns</p>
-        <ul class="terms">
-            <li>colspan</li>
-            <li>rowspan</li>
-        </ul>
-        <ul>
-            <li>caption</li>
-            <li>col</li>
-            <li>colgroup</li>
-            <li>table</li>
-            <li>tr</li>
-            <li>th</li>
-            <li>td</li>
-        </ul>
-        <p>Additional Table Elements</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-        <ul>
-            <li>thead</li>
-            <li>tbody</li>
-            <li>tfoot</li>
-        </ul>
-        <p>Using Tables for Layout (not good idea)</p>
+        <section id="introduction">
+            <h2 >Introducing Tables</h2>
+            <ul class="terms">
+                <li>table</li>
+            </ul>
+            <h3>Basic Table Structure</h3>
+            <h3>Spanning Rows and Columns</h3>
+            <ul class="terms">
+                <li>colspan</li>
+                <li>rowspan</li>
+            </ul>
+            <ul>
+                <li>caption</li>
+                <li>col</li>
+                <li>colgroup</li>
+                <li>table</li>
+                <li>tr</li>
+                <li>th</li>
+                <li>td</li>
+            </ul>
+            <h3>Additional Table Elements</h3>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+            <ul>
+                <li>thead</li>
+                <li>tbody</li>
+                <li>tfoot</li>
+            </ul>
+            <h3>Using Tables for Layout (not good idea)</h3>
+        </section>
+
 
 
         <section>
@@ -159,9 +165,8 @@
         </table>
         </section>
 
-        <h2 id="styling">Styling Tables</h2>
-        
-        <section>
+        <section id="styling">
+        <h2 >Styling Tables</h2>
             <h3>Table Border</h3>
             <ul>
                 <li><strong>Table</strong></li>
@@ -185,16 +190,14 @@
                     <td>50</td>
                 </tr>
             </table>
-        </section>
-
-        <section>
+    
             <h3>Boxes and Zebras</h3>
             <p>Hover</p>
             <p>Zebra</p>
         </section>
 
-
-        <h2 id="forms">Introducing Forms</h2>
+        <section id="forms">
+        <h2 >Introducing Forms</h2>
         <ul class="terms">
             <li>Forms</li>
         </ul>
@@ -245,6 +248,7 @@
         <h3>Query Strings</h3>
         <ul class="terms">
             <li>query string</li>
+            <li>URL encoded (also called percent encoded)</li>
         </ul>
         <h3>The &lt;form&gt; Element</h3>
         <ul class="terms">
@@ -270,15 +274,24 @@
             <li>output</li>
         </ul>
         <h3>Text Input Controls</h3>
+        <ul>
+            <li>text</li>
+            <li>textarea</li>
+            <li>password</li>
+            <li>search</li>
+            <li>email</li>
+            <li>tel</li>
+            <li>url</li>
+        </ul>
 
 
         <h3>Choice Controls</h3>
-        <p>Select Lists</p>
-        <p>Radio Buttons</p>
+        <h4>Select Lists</h4>
+        <h4>Radio Buttons</h4>
         <ul class="terms">
             <li>radio buttons</li>
         </ul>
-        <p>Checkboxes</p>
+        <h4>Checkboxes</h4>
         <ul class="terms">
             <li>checkboxes</li>
         </ul>
@@ -301,9 +314,10 @@
             <li>input type="color"</li>
             <li>date and time</li>
         </ul>
-        <p>Number and Range</p>
-        <p>Progress Bar</p>
-        <p>Color</p>
+        <h4>Number and Range</h4>
+        <p>Progress Bar  < progress value="70" max="100" > 70 % < / progress ></p>
+        <p>Meter  < meter value="4" min="0" low="2" high="8" > 4  of 10 < / meter >   </p>
+        <h4>Color</h4>
 
         <h3>Date and Time Controls</h3>
         <ul>
@@ -314,7 +328,9 @@
             <li>month</li>
             <li>week</li>
         </ul>
+    </section>
 
+    <section>
         <h2>Table and Form Accessibility</h2>
         <ul class="terms">
             <li>web accessibility</li>
@@ -322,13 +338,16 @@
         </ul>
         <h3>Accessible Tables</h3>
         <h3>Accessible Forms</h3>
+    </section>
 
+    <section>
         <h2>Microformats</h2>
         <ul class="terms">
             <li>microformat</li>
             <li>hcard</li>
             <li>schema.org</li>
         </ul>
+    </section>
 
 
     </main>
